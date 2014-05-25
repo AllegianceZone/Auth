@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="c:\1\CSS\Lobby" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Allegiance.CommunitySecuritySystem.Common.dll" publishTime="09/10/2012 23:26:13" />
+    <file relUrl="bin/Allegiance.CommunitySecuritySystem.BlackboxGenerator.dll" publishTime="09/14/2012 14:59:52" />
+    <file relUrl="Web.config" publishTime="11/21/2011 23:23:27" />
+    <file relUrl="bin/Allegiance.CommunitySecuritySystem.Lobby.dll" publishTime="09/14/2012 14:59:54" />
+    <file relUrl="bin/Allegiance.CommunitySecuritySystem.DataAccess.dll" publishTime="09/14/2012 14:59:51" />
+    <file relUrl="bin/CookComputing.XmlRpcV2.dll" publishTime="05/20/2011 10:17:38" />
+  </publishProfile>
+</publishData>
