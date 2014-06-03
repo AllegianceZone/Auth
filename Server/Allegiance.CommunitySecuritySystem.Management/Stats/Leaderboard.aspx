@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" EnableViewState="false" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="Leaderboard.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Stats.Leaderboard" %>
+﻿<%@ Page Title="" EnableViewState="false" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="Leaderboard.aspx.cs" Inherits="ACSSAuth.Management.Stats.Leaderboard" %>
 
 
 

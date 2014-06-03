@@ -7,9 +7,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.Integration;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Install
+namespace ACSSAuth.Client.Install
 {
 	public partial class CopyProgress : Form
 	{

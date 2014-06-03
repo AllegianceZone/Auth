@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.ClientService;
+using ACSSAuth.Client.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Service
+namespace ACSSAuth.Client.Service
 {
     [Serializable]
     class BaseMessage

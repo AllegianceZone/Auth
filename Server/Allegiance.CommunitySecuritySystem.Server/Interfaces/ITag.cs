@@ -6,7 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using System.ServiceModel.Activation;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Interfaces
+namespace ACSSAuth.Server.Interfaces
 {
 	// NOTE: If you change the interface name "ITag" here, you must also update the reference to "ITag" in Web.config.
 	[ServiceContract]

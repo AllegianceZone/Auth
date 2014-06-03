@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Utility;
 using System.Drawing;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
     public partial class MessageListControl : UserControl
     {

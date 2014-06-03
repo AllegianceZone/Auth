@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TopNavigation.ascx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.UI.UserControls.TopNavigation" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TopNavigation.ascx.cs" Inherits="ACSSAuth.Management.UI.UserControls.TopNavigation" %>
 
 <%--<style type="text/css">
 	.mainNav li.AspNet-Menu-WithChildren

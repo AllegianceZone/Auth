@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest.Properties {
+namespace ACSSAuth.ServerTest.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

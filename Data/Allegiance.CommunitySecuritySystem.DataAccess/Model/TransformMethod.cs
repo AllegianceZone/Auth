@@ -4,9 +4,9 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.DataAccess.Enumerations;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class TransformMethod
     {
@@ -78,7 +78,7 @@ namespace Allegiance.CommunitySecuritySystem.DataAccess
                 }
 
                 var assembly = results.CompiledAssembly;
-                var tokenGeneration = assembly.GetType("Allegiance.CommunitySecuritySystem.BlackboxGenerator.Resources.TokenGeneration");
+                var tokenGeneration = assembly.GetType("ACSSAuth.BlackboxGenerator.Resources.TokenGeneration");
                 var method = tokenGeneration.GetMethod("Generate", BindingFlags.Static | BindingFlags.Public);
 
                 return method.Invoke(null, new object[] { hash }) as string;

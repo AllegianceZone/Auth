@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Authentication;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
-using Allegiance.CommunitySecuritySystem.Server.Interfaces;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.DataAccess;
+using ACSSAuth.Server.Contracts;
+using ACSSAuth.Server.Interfaces;
 using System.ServiceModel.Activation;
 
-namespace Allegiance.CommunitySecuritySystem.Server
+namespace ACSSAuth.Server
 {
 	[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class Administration : IAdministration

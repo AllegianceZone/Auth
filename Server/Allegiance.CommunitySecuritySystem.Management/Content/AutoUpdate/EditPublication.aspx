@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master"
-	AutoEventWireup="true" CodeBehind="EditPublication.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.EditPublication" %>
+	AutoEventWireup="true" CodeBehind="EditPublication.aspx.cs" Inherits="ACSSAuth.Management.Content.AutoUpdate.EditPublication" %>
 
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 

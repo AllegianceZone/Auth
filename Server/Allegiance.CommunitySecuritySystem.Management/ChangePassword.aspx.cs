@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	public partial class ChangePassword : UI.Page
 	{

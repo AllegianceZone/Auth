@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Lobby
     {

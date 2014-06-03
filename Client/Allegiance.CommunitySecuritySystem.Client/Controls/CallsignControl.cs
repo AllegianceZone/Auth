@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
     public partial class CallsignControl : UserControl
     {
@@ -54,7 +54,7 @@ namespace Allegiance.CommunitySecuritySystem.Client.Controls
 
         internal void LoadCallsigns(bool reloadFromServer)
         {
-			Allegiance.CommunitySecuritySystem.Client.Service.Callsign.RetrieveCallsignsCompleteDelegate signal = delegate(List<Callsign> callsigns, int availableAliasCount)
+			ACSSAuth.Client.Service.Callsign.RetrieveCallsignsCompleteDelegate signal = delegate(List<Callsign> callsigns, int availableAliasCount)
             {
 				LoadCallsigns(callsigns);
 				SetAvailableAliasControls(availableAliasCount);

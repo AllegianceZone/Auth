@@ -1,12 +1,12 @@
-﻿using Allegiance.CommunitySecuritySystem.Cleanup;
+﻿using ACSSAuth.Cleanup;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Allegiance.CommunitySecuritySystem.ServerTest;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.ServerTest;
+using ACSSAuth.DataAccess;
 using System.Linq;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
+using ACSSAuth.Common.Envelopes.AuthInfo;
 
-namespace Allegiance.CommunitySecuritySystem.CleanupTest
+namespace ACSSAuth.CleanupTest
 {
     
     
@@ -53,7 +53,7 @@ namespace Allegiance.CommunitySecuritySystem.CleanupTest
 		///A test for CleanupPolls
 		///</summary>
 		[TestMethod()]
-		[DeploymentItem("Allegiance.CommunitySecuritySystem.Cleanup.dll")]
+		[DeploymentItem("ACSSAuth.Cleanup.dll")]
 		public void CleanupPollsTest()
 		{
 			base.Initialize();
@@ -148,7 +148,7 @@ namespace Allegiance.CommunitySecuritySystem.CleanupTest
 		/////A test for CleanupBlackboxes
 		/////</summary>
 		//[TestMethod()]
-		//[DeploymentItem("Allegiance.CommunitySecuritySystem.Cleanup.dll")]
+		//[DeploymentItem("ACSSAuth.Cleanup.dll")]
 		//public void CleanupBlackboxesTest()
 		//{
 		//    Task_Accessor.CleanupBlackboxes();
@@ -159,7 +159,7 @@ namespace Allegiance.CommunitySecuritySystem.CleanupTest
 		/////A test for CleanupCaptchas
 		/////</summary>
 		//[TestMethod()]
-		//[DeploymentItem("Allegiance.CommunitySecuritySystem.Cleanup.dll")]
+		//[DeploymentItem("ACSSAuth.Cleanup.dll")]
 		//public void CleanupCaptchasTest()
 		//{
 		//    Task_Accessor.CleanupCaptchas();
@@ -172,7 +172,7 @@ namespace Allegiance.CommunitySecuritySystem.CleanupTest
 		/////A test for CleanupSessions
 		/////</summary>
 		//[TestMethod()]
-		//[DeploymentItem("Allegiance.CommunitySecuritySystem.Cleanup.dll")]
+		//[DeploymentItem("ACSSAuth.Cleanup.dll")]
 		//public void CleanupSessionsTest()
 		//{
 		//    Task_Accessor.CleanupSessions();
@@ -231,7 +231,7 @@ namespace Allegiance.CommunitySecuritySystem.CleanupTest
 		/////A test for RecalculatePolls
 		/////</summary>
 		//[TestMethod()]
-		//[DeploymentItem("Allegiance.CommunitySecuritySystem.Cleanup.dll")]
+		//[DeploymentItem("ACSSAuth.Cleanup.dll")]
 		//public void RecalculatePollsTest()
 		//{
 		//    Task_Accessor.RecalculatePolls();

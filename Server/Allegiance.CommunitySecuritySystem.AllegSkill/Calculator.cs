@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.AllegSkill
+namespace ACSSAuth.AllegSkill
 {
 	public class Calculator
 	{
@@ -55,7 +55,7 @@ namespace Allegiance.CommunitySecuritySystem.AllegSkill
 				//                // ---- End dummy code ----
 
 				//                // Save the finished calculaitons.
-				//                using (DataAccess.CSSStatsDataContext statsDB = new Allegiance.CommunitySecuritySystem.DataAccess.CSSStatsDataContext())
+				//                using (DataAccess.CSSStatsDataContext statsDB = new ACSSAuth.DataAccess.CSSStatsDataContext())
 				//                {
 				//                    DataAccess.StatsLeaderboard leaderboard = statsDB.StatsLeaderboards.FirstOrDefault(p => p.LoginUsername == alias.Login.Username);
 				//                    if (leaderboard != null)

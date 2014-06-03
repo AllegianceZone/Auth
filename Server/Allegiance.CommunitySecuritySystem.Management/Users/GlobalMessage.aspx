@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="GlobalMessage.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Users.GlobalMessage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="GlobalMessage.aspx.cs" Inherits="ACSSAuth.Management.Users.GlobalMessage" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">

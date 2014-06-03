@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="CreateUser.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.CreateUser" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="CreateUser.aspx.cs" Inherits="ACSSAuth.Management.CreateUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -147,7 +147,7 @@
 		/* The microsoft membership provider framework does not allow the validation summary to work correctly for client side custom validators.
 		var username = document.getElementById(source.controltovalidate).value;
 
-		if(username.length < <%= Allegiance.CommunitySecuritySystem.DataAccess.Alias.MinAliasLength %> || username.length > <%= Allegiance.CommunitySecuritySystem.DataAccess.Alias.MaxAliasLength %>)
+		if(username.length < <%= ACSSAuth.DataAccess.Alias.MinAliasLength %> || username.length > <%= ACSSAuth.DataAccess.Alias.MaxAliasLength %>)
 			args.IsValid = false;
 		*/
 	}

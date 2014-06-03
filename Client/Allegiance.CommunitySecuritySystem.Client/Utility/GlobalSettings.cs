@@ -1,7 +1,7 @@
 ﻿using System;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.Integration;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     [Serializable]
     internal class GlobalSettings

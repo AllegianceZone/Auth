@@ -8,13 +8,13 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.ClientService;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Integration;
 
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
 	public partial class NewAccount : LoginControlBase
 	{

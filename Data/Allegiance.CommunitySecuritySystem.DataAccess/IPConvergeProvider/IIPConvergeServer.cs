@@ -5,7 +5,7 @@ using System.Web;
 using CookComputing.XmlRpc;
 using System.Runtime.InteropServices;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.IPConvergeProvider
+namespace ACSSAuth.DataAccess.IPConvergeProvider
 {
 	public interface IIPConvergeServer : IXmlRpcProxy
 	{

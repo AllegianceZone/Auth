@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
     public partial class PollDisplayControl : UserControl
     {

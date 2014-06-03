@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="PollResults.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Stats.PollResults" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="PollResults.aspx.cs" Inherits="ACSSAuth.Management.Stats.PollResults" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -52,7 +52,7 @@
 
 
 	<asp:LinqDataSource ID="ldsPolls" runat="server" 
-		ContextTypeName="Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext" 
+		ContextTypeName="ACSSAuth.DataAccess.CSSDataContext" 
 		OrderBy="DateCreated desc" 
 		Select="new (Question, Id, DateCreated, PollOptions)" TableName="Polls" 
 		Where="DateExpires.AddMonths(3) &gt; DateTime.Now">

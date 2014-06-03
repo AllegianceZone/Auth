@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Common {
+namespace ACSSAuth.Common {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -55,9 +55,9 @@
     <Compile Include="TaskTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Data\Allegiance.CommunitySecuritySystem.DataAccess\Allegiance.CommunitySecuritySystem.DataAccess.csproj">
+    <ProjectReference Include="..\..\Data\Allegiance.CommunitySecuritySystem.DataAccess\ACSSAuth.DataAccess.csproj">
       <Project>{B8178CDC-46A1-46D6-AB6E-D9B393BE0746}</Project>
-      <Name>Allegiance.CommunitySecuritySystem.DataAccess</Name>
+      <Name>ACSSAuth.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Tasks\TransformMethodGenerator\Allegiance.CommunitySecuritySystem.TransformMethodGenerator.csproj">
       <Project>{F9D62DEB-D0C8-4EB7-9E66-B5EB66FC605A}</Project>

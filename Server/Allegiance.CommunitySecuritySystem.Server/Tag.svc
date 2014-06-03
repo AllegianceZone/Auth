@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Allegiance.CommunitySecuritySystem.Server.Tag" CodeBehind="Tag.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ACSSAuth.Server.Tag" CodeBehind="Tag.svc.cs" %>

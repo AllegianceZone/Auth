@@ -3,14 +3,14 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.Server;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+using ACSSAuth.DataAccess;
+using ACSSAuth.Server;
+using ACSSAuth.Server.Contracts;
 using System.Data.Linq.SqlClient;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Envelopes.AuthInfo;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest.DataAccessTest
+namespace ACSSAuth.ServerTest.DataAccessTest
 {
 	/// <summary>
 	/// Summary description for Identity
@@ -680,20 +680,20 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest.DataAccessTest
 			
 				db.MachineRecords.InsertOnSubmit(new MachineRecord()
 				{
-					DeviceType = Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo.DeviceType.HardDisk,
+					DeviceType = ACSSAuth.Common.Envelopes.AuthInfo.DeviceType.HardDisk,
 					Identifier = "1234567890",
 					LoginId = login3.Id,
-					RecordTypeId = (int)Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo.DeviceType.HardDisk
+					RecordTypeId = (int)ACSSAuth.Common.Envelopes.AuthInfo.DeviceType.HardDisk
 				});
 
 				db.SubmitChanges();
 
 				db.MachineRecords.InsertOnSubmit(new MachineRecord()
 				{
-					DeviceType = Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo.DeviceType.Serial,
+					DeviceType = ACSSAuth.Common.Envelopes.AuthInfo.DeviceType.Serial,
 					Identifier = "ABCDEFGHIJKLMNOP",
 					LoginId = login3.Id,
-					RecordTypeId = (int)Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo.DeviceType.Serial
+					RecordTypeId = (int)ACSSAuth.Common.Envelopes.AuthInfo.DeviceType.Serial
 				});
 
 				db.SubmitChanges();

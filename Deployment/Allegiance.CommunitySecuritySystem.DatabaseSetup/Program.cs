@@ -14,7 +14,7 @@ using Microsoft.SqlServer.Management.Smo;
 using Microsoft.SqlServer.Management.Common;
 using System.Data.SqlClient;
 
-namespace Allegiance.CommunitySecuritySystem.DatabaseSetup
+namespace ACSSAuth.DatabaseSetup
 {
 	class Program
 	{
@@ -23,7 +23,7 @@ namespace Allegiance.CommunitySecuritySystem.DatabaseSetup
 			if (args.Length != 2)
 			{
 				Console.WriteLine("Usage: DatabaseSetup <create scripts directory> <change scripts directory>");
-				Console.WriteLine(@"Example: DatabaseSetup ""C:\Source\Allegiance\CSS\Data\Allegiance.CommunitySecuritySystem.Database\Create Scripts"", ""C:\Source\Allegiance\CSS\Data\Allegiance.CommunitySecuritySystem.Database\Change Scripts""");
+				Console.WriteLine(@"Example: DatabaseSetup ""C:\Source\Allegiance\CSS\Data\ACSSAuth.Database\Create Scripts"", ""C:\Source\Allegiance\CSS\Data\ACSSAuth.Database\Change Scripts""");
 
 				return -1;
 			}

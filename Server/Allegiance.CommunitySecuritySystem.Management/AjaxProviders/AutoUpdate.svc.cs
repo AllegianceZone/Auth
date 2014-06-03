@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Business;
 using System.Security.Principal;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Management.AjaxProviders
+namespace ACSSAuth.Management.AjaxProviders
 {
 	[ServiceBehavior(IncludeExceptionDetailInFaults = true)]
 	[ServiceContract(Namespace = "AjaxProviders")]

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats
+namespace ACSSAuth.Management.Stats
 {
 	public partial class PollResults : UI.Page
 	{

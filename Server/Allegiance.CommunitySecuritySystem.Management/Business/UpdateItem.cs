@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Business
+namespace ACSSAuth.Management.Business
 {
 	public class UpdateItem
 	{

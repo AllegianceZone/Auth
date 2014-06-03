@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Business;
 using System.Security;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.UI
+namespace ACSSAuth.Management.Content.AutoUpdate.UI
 {
 	public class Page : Content.UI.Page
 	{

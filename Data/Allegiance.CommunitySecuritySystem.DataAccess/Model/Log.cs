@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.DataAccess.Enumerations;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Log
     {

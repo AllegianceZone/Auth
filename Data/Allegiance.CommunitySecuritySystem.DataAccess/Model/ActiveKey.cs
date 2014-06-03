@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class ActiveKey
     {

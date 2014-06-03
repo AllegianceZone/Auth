@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.Motd
+namespace ACSSAuth.Management.Content.Motd
 {
 	public partial class MotdDownloaderIframe : UI.Page
 	{

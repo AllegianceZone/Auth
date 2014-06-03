@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls {
+namespace ACSSAuth.Management.Enforcer.UI.UserControls {
     
     
     public partial class Ban {

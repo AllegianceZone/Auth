@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.AutoUpdate
+namespace ACSSAuth.AutoUpdate
 {
     public class AutoUpdateHandler : IHttpHandler
     {

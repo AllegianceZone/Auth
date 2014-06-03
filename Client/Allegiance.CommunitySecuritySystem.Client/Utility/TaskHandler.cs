@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Threading;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     internal static class TaskHandler
     {

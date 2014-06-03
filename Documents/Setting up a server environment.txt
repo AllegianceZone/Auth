@@ -93,7 +93,7 @@ IIS 6 (not recommended)
 IIS 7/7.5 (recommended - With integrated app pool)
 - In IIS create a new Virtual Directory underneath the CSSServer entitled "AutoUpdate".
 - You shouldn't have to do anything since the web.config is already configured.
-- Ensure HTTP Binding is set RequestPath: * (all verbs) on Allegiance.CommunitySecuritySystem.AutoUpdate.dll
+- Ensure HTTP Binding is set RequestPath: * (all verbs) on ACSSAuth.AutoUpdate.dll
 
 General
 - Perform AutoUpdateImport task (Details to come)
@@ -117,7 +117,7 @@ IIS 6 (not recommended)
 IIS 7/7.5 (recommended - With integrated app pool)
 - In IIS create a new Virtual Directory underneath the CSSServer entitled "LobbyAuthentication".
 - You shouldn't have to do anything since the web.config is already configured.
-- Ensure HTTP Binding is set RequestPath: * (all verbs) on Allegiance.CommunitySecuritySystem.Lobby.dll
+- Ensure HTTP Binding is set RequestPath: * (all verbs) on ACSSAuth.Lobby.dll
 
 General
 - Configure web.config connection string appropriately

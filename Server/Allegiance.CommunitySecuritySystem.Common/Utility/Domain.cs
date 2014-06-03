@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Utility
+namespace ACSSAuth.Common.Utility
 {
     public class Domain
     {

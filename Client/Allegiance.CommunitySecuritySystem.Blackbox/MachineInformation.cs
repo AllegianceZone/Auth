@@ -4,7 +4,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Blackbox
+namespace ACSSAuth.Blackbox
 {
     public class MachineInformation : IXmlSerializable
     {

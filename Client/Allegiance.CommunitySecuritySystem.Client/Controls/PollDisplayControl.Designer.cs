@@ -1,4 +1,4 @@
-﻿namespace Allegiance.CommunitySecuritySystem.Client.Controls
+﻿namespace ACSSAuth.Client.Controls
 {
     partial class PollDisplayControl
     {
@@ -37,7 +37,7 @@
 			this.panel3 = new System.Windows.Forms.Panel();
 			this._pollHeaderLabel = new System.Windows.Forms.Label();
 			this.splitter1 = new System.Windows.Forms.Splitter();
-			this._optionList = new Allegiance.CommunitySecuritySystem.Client.Controls.Custom.RadioListBox();
+			this._optionList = new ACSSAuth.Client.Controls.Custom.RadioListBox();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.panel3.SuspendLayout();
@@ -168,7 +168,7 @@
 
         private System.Windows.Forms.Button _voteBtn;
         private System.Windows.Forms.Button _remindLaterBtn;
-        private Allegiance.CommunitySecuritySystem.Client.Controls.Custom.RadioListBox _optionList;
+        private ACSSAuth.Client.Controls.Custom.RadioListBox _optionList;
         private System.Windows.Forms.Label _questionText;
         private System.Windows.Forms.Label _dateLabel;
 		private System.Windows.Forms.Panel panel1;

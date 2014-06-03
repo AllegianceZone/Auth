@@ -8,9 +8,9 @@ using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Web.Caching;
 using System.Web;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+using ACSSAuth.Server.Contracts;
 
-namespace Allegiance.CommunitySecuritySystem.Server
+namespace ACSSAuth.Server
 {
 	// NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Stats" in code, svc and config file together.
 	//[ServiceContract]
@@ -34,7 +34,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 			if (returnValue == null)
 			{
-				using (DataAccess.CSSStatsDataContext statsDB = new Allegiance.CommunitySecuritySystem.DataAccess.CSSStatsDataContext())
+				using (DataAccess.CSSStatsDataContext statsDB = new ACSSAuth.DataAccess.CSSStatsDataContext())
 				{
 					returnValue = DataAccess.StatsLeaderboard.GetSortedLeaderboard(statsDB);
 					HttpRuntime.Cache.Add(cacheKey, returnValue, null, Cache.NoAbsoluteExpiration, new TimeSpan(0, 0, 30), CacheItemPriority.Normal, null);
@@ -62,7 +62,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 			if (returnValue == null)
 			{
-				using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+				using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 				{
 					var activeLogins = db.Logins
 						.Where(p => p.Sessions.Where(r => r.DateLastCheckIn > DateTime.Now.AddMinutes(-3)).Count() > 0)

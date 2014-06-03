@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" EnableTheming="false" AutoEventWireup="true" CodeBehind="MotdTemplate.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.Motd.MotdTemplate" %>
+﻿<%@ Page Language="C#" EnableTheming="false" AutoEventWireup="true" CodeBehind="MotdTemplate.aspx.cs" Inherits="ACSSAuth.Management.Content.Motd.MotdTemplate" %>
 use "effect";
 use "font";
 use "model";

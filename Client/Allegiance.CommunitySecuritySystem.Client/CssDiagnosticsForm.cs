@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
 	public partial class CssDiagnosticsForm : Form
 	{

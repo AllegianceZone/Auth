@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.UI.UserControls
+namespace ACSSAuth.Management.UI.UserControls
 {
 	public partial class TopNavigation : System.Web.UI.UserControl
 	{

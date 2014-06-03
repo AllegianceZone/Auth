@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI.HtmlControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.UI
+namespace ACSSAuth.Management.UI
 {
 	public class Page : System.Web.UI.Page
 	{

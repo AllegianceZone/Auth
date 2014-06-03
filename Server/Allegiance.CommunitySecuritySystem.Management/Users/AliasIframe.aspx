@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AliasIframe.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Users.AliasIframe" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AliasIframe.aspx.cs" Inherits="ACSSAuth.Management.Users.AliasIframe" %>
 
 <%@ Register src="UI/UserControls/AliasDetail.ascx" tagname="AliasDetail" tagprefix="uc1" %>
 

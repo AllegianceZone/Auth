@@ -5,7 +5,7 @@ using System.Web;
 using System.Linq.Expressions;
 using System.Web.Security;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.MembershipProviders
+namespace ACSSAuth.DataAccess.MembershipProviders
 {
 	public static class MembershipUserUtility
 	{

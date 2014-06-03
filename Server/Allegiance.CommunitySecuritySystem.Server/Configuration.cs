@@ -6,7 +6,7 @@ using System.Collections.Specialized;
 using System.Configuration;
 using System.Xml;
 
-namespace Allegiance.CommunitySecuritySystem.Server
+namespace ACSSAuth.Server
 {
 	public class Configuration
 	{

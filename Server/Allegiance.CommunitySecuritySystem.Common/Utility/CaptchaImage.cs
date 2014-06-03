@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Utility
+namespace ACSSAuth.Common.Utility
 {
 	/// <summary>
 	/// Taken from a CodeProject sample by BrainJar: http://www.codeproject.com/kb/aspnet/captchaimage.aspx

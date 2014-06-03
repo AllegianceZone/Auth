@@ -1,4 +1,4 @@
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
 	partial class CSSStatsDataContext
 	{

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Business;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.UI.UserControls
+namespace ACSSAuth.Management.Content.AutoUpdate.UI.UserControls
 {
 	public partial class PackageContents : System.Web.UI.UserControl
 	{

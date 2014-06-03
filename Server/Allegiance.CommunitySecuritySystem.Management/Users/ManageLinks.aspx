@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UI/MasterPages/Default.Master" CodeBehind="ManageLinks.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Users.ManageLinks" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UI/MasterPages/Default.Master" CodeBehind="ManageLinks.aspx.cs" Inherits="ACSSAuth.Management.Users.ManageLinks" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

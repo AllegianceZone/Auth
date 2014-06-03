@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.UI.MasterPages {
+namespace ACSSAuth.Management.UI.MasterPages {
     
     
     public partial class Default {
@@ -55,7 +55,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.UI.MasterPages {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Allegiance.CommunitySecuritySystem.Management.UI.UserControls.TopNavigation ucTopNavigation;
+        protected global::ACSSAuth.Management.UI.UserControls.TopNavigation ucTopNavigation;
         
         /// <summary>
         /// LoginView2 control.
@@ -100,6 +100,6 @@ namespace Allegiance.CommunitySecuritySystem.Management.UI.MasterPages {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Allegiance.CommunitySecuritySystem.Management.UI.UserControls.Footer Footer1;
+        protected global::ACSSAuth.Management.UI.UserControls.Footer Footer1;
     }
 }

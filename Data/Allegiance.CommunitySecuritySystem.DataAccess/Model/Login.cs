@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess.MembershipProviders;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.DataAccess.Enumerations;
+using ACSSAuth.DataAccess.MembershipProviders;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Login
     {

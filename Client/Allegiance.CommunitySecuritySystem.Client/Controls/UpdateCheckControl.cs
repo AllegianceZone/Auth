@@ -5,10 +5,10 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.Service;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.Service;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
 	public partial class UpdateCheckControl : UserControl
 	{

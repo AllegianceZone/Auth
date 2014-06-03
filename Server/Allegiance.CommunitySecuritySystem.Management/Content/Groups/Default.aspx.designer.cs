@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.Groups {
+namespace ACSSAuth.Management.Content.Groups {
     
     
     public partial class Default {

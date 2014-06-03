@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users
+namespace ACSSAuth.Management.Users
 {
 	/// <summary>
 	/// There were too many issues with dynamically generating the alias tabs and 

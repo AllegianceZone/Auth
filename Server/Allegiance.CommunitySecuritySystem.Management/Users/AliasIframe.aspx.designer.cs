@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users {
+namespace ACSSAuth.Management.Users {
     
     
     public partial class AliasIframe {
@@ -37,6 +37,6 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Allegiance.CommunitySecuritySystem.Management.Users.UI.UserControls.AliasDetail ucAliasDetail;
+        protected global::ACSSAuth.Management.Users.UI.UserControls.AliasDetail ucAliasDetail;
     }
 }

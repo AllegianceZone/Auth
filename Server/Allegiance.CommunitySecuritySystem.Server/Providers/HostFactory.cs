@@ -4,7 +4,7 @@ using System.Configuration;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Providers
+namespace ACSSAuth.Server.Providers
 {
     public class HostFactory : ServiceHostFactory
     {

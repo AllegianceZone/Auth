@@ -1,4 +1,4 @@
-﻿namespace Allegiance.CommunitySecuritySystem.Client
+﻿namespace ACSSAuth.Client
 {
     partial class DiagnosticsForm
     {
@@ -54,7 +54,7 @@
 			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this._dxDiagThrobber = new Allegiance.CommunitySecuritySystem.Client.Controls.AnimatedThrobberControl.AnimatedThrobber();
+			this._dxDiagThrobber = new ACSSAuth.Client.Controls.AnimatedThrobberControl.AnimatedThrobber();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 

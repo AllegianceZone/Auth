@@ -1,4 +1,4 @@
-﻿namespace Allegiance.CommunitySecuritySystem.Client.Controls
+﻿namespace ACSSAuth.Client.Controls
 {
     partial class CreateCallsignControl
     {

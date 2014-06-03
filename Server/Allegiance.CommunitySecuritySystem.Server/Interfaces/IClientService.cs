@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ServiceModel;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
-using Allegiance.CommunitySecuritySystem.DataAccess.Model;
+using ACSSAuth.DataAccess;
+using ACSSAuth.DataAccess.Enumerations;
+using ACSSAuth.Server.Contracts;
+using ACSSAuth.DataAccess.Model;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Interfaces
+namespace ACSSAuth.Server.Interfaces
 {
     [ServiceContract]
     public interface IClientService

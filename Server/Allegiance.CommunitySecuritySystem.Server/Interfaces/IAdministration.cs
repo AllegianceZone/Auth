@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ServiceModel;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+using ACSSAuth.DataAccess;
+using ACSSAuth.Server.Contracts;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Interfaces
+namespace ACSSAuth.Server.Interfaces
 {
     [ServiceContract]
     public interface IAdministration

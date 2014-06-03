@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.Service;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.Service;
 using System.Threading;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Integration
+namespace ACSSAuth.Client.Integration
 {
     class SystemWatcher
     {

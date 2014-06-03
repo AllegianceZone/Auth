@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="BlockExecution.ashx.cs" Class="Allegiance.CommunitySecuritySystem.Management.HttpHandlers.BlockExecution" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="BlockExecution.ashx.cs" Class="ACSSAuth.Management.HttpHandlers.BlockExecution" %>

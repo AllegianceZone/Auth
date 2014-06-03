@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.DataAccess.Enumerations;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Ban
     {

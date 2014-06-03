@@ -1,9 +1,9 @@
 ﻿using System.Runtime.Serialization;
-using Allegiance.CommunitySecuritySystem.BlackboxGenerator;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
+using ACSSAuth.BlackboxGenerator;
+using ACSSAuth.Common.Enumerations;
 using System;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Contracts
+namespace ACSSAuth.Server.Contracts
 {
     [DataContract]
     public class AuthenticatedData

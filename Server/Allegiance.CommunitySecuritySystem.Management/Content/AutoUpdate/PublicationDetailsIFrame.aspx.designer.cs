@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate {
+namespace ACSSAuth.Management.Content.AutoUpdate {
     
     
     public partial class PublicationDetailsIFrame {
@@ -28,6 +28,6 @@ namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.UI.UserControls.PackageContents ucPackageContents;
+        protected global::ACSSAuth.Management.Content.AutoUpdate.UI.UserControls.PackageContents ucPackageContents;
     }
 }

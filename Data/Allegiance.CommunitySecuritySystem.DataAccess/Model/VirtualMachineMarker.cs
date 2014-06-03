@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
+using ACSSAuth.Common.Envelopes.AuthInfo;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
 	public partial class VirtualMachineMarker
 	{

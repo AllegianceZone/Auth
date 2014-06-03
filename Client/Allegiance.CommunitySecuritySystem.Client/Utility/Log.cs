@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     class Log
     {

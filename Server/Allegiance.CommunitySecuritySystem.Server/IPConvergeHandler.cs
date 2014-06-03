@@ -4,15 +4,15 @@ using System.IO;
 using System.Text;
 using System.Linq;
 using CookComputing.XmlRpc;
-using Allegiance.CommunitySecuritySystem.Server.Properties;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.DataAccess.IPConvergeProvider;
+using ACSSAuth.DataAccess;
+using ACSSAuth.DataAccess.IPConvergeProvider;
 using System.Collections;
-using Allegiance.CommunitySecuritySystem.Server.Utilities;
+using ACSSAuth.Server.Utilities;
+using ACSSAuth.Server.Properties;
 
 
 
-namespace Allegiance.CommunitySecuritySystem.Server
+namespace ACSSAuth.Server
 {
 	public class IPConvergeHandler : XmlRpcService, IHttpHandler //, IIPConvergeHandler
 	{
@@ -58,7 +58,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 				var connect = new Connect();
 
 				// TODO: Determine how to handle IPC MD5 passwords if you want to use converge.
-				//connect.Authenticate("backtrak", Allegiance.CommunitySecuritySystem.Common.Utility.Encryption.MD5Hash("xxxxxx"), out authenticationStatus, out email);
+				//connect.Authenticate("backtrak", ACSSAuth.Common.Utility.Encryption.MD5Hash("xxxxxx"), out authenticationStatus, out email);
 				//context.Response.Write(authenticationStatus + " " + email);
 			}
 			else

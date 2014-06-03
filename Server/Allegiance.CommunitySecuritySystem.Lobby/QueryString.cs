@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Lobby
+namespace ACSSAuth.Lobby
 {
     public class QueryString
     {

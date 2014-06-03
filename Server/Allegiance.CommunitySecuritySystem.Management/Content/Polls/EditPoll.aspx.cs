@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.Polls
+namespace ACSSAuth.Management.Content.Polls
 {
 	public partial class EditPoll : UI.Page
 	{

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Allegiance.CommunitySecuritySystem.AccountLinkingTestClient")]
+[assembly: AssemblyTitle("ACSSAuth.AccountLinkingTestClient")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Free Allegiance Organization")]
-[assembly: AssemblyProduct("Allegiance.CommunitySecuritySystem.AccountLinkingTestClient")]
+[assembly: AssemblyProduct("ACSSAuth.AccountLinkingTestClient")]
 [assembly: AssemblyCopyright("Copyright © FAO 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

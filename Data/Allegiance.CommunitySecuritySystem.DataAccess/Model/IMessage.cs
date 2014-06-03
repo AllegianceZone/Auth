@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.Model
+namespace ACSSAuth.DataAccess.Model
 {
 	public interface IMessage
 	{

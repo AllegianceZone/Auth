@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Integration
+namespace ACSSAuth.Client.Integration
 {
 	public enum LobbyType
 	{

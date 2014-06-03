@@ -61,9 +61,9 @@
     <Compile Include="Utility\RegistryAccessTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Client\Allegiance.CommunitySecuritySystem.Client\Allegiance.CommunitySecuritySystem.Client.csproj">
+    <ProjectReference Include="..\..\Client\Allegiance.CommunitySecuritySystem.Client\ACSSAuth.Client.csproj">
       <Project>{0ACCB3C9-E551-49D0-B79B-364995D1B6F0}</Project>
-      <Name>Allegiance.CommunitySecuritySystem.Client</Name>
+      <Name>ACSSAuth.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

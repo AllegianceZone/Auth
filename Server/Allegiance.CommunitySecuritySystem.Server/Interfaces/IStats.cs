@@ -4,9 +4,9 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+using ACSSAuth.Server.Contracts;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Interfaces
+namespace ACSSAuth.Server.Interfaces
 {
 	// NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IStats" in both code and config file together.
 	[ServiceContract]

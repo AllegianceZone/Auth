@@ -5,13 +5,13 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Service;
+using ACSSAuth.Client.Service;
 using System.Diagnostics;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.ClientService;
+using ACSSAuth.Client.Integration;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
 	public partial class Login : LoginControlBase
 	{

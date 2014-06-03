@@ -1,7 +1,7 @@
 ﻿using System;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.TaskHandler
+namespace ACSSAuth.TaskHandler
 {
     class Program
     {

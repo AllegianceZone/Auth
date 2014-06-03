@@ -5,11 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.ClientService;
 using System.Threading;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
 	public partial class LauncherStartupProgress : LoginBaseForm
 	{

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.VirtualMachineMarkers.UI
+namespace ACSSAuth.Management.Content.VirtualMachineMarkers.UI
 {
 	public class Page : Content.UI.Page
 	{

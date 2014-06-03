@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AliasDetail.ascx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Users.UI.UserControls.AliasDetail" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AliasDetail.ascx.cs" Inherits="ACSSAuth.Management.Users.UI.UserControls.AliasDetail" %>
 
 <asp:Panel ID="pGroups" runat="server">
 	<br />

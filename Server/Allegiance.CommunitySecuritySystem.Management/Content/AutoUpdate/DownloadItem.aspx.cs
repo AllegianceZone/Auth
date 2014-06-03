@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Business;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Management.Properties;
+using ACSSAuth.Management.Properties;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
+namespace ACSSAuth.Management.Content.AutoUpdate
 {
 	public partial class DownloadItem : System.Web.UI.Page
 	{

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Squads
+namespace ACSSAuth.Management.Squads
 {
 	public partial class Default : UI.Page
 	{
@@ -154,7 +154,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Squads
 			if (callsignGroupRole == Business.GroupRole.SquadLeader && currentUserGroupRole != Business.GroupRole.SquadLeader && currentUserGroupRole != Business.GroupRole.ZoneLead)
 				throw new Exception("Only squad leaders can perform this action.");
 
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var alias = DataAccess.Alias.GetAliasByCallsign(db, callsign);
 				var callsignAssignmentsToGroup = db.Group_Alias_GroupRoles.Where(p => p.GroupId == groupID && p.Alias.Id == alias.Id);

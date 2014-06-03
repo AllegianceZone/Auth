@@ -6,5 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="StatsLeaderboard" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>Allegiance.CommunitySecuritySystem.DataAccess.StatsLeaderboard, Allegiance.CommunitySecuritySystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+   <TypeInfo>ACSSAuth.DataAccess.StatsLeaderboard, ACSSAuth.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

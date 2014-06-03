@@ -45,9 +45,9 @@
     <Compile Include="Task.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Data\Allegiance.CommunitySecuritySystem.DataAccess\Allegiance.CommunitySecuritySystem.DataAccess.csproj">
+    <ProjectReference Include="..\..\Data\Allegiance.CommunitySecuritySystem.DataAccess\ACSSAuth.DataAccess.csproj">
       <Project>{B8178CDC-46A1-46D6-AB6E-D9B393BE0746}</Project>
-      <Name>Allegiance.CommunitySecuritySystem.DataAccess</Name>
+      <Name>ACSSAuth.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

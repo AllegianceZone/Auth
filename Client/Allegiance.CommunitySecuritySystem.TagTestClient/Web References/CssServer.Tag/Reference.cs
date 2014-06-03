@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace Allegiance.CommunitySecuritySystem.TagTestClient.CssServer.Tag {
+namespace ACSSAuth.TagTestClient.CssServer.Tag {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -35,7 +35,7 @@ namespace Allegiance.CommunitySecuritySystem.TagTestClient.CssServer.Tag {
         
         /// <remarks/>
         public Tag() {
-            this.Url = global::Allegiance.CommunitySecuritySystem.TagTestClient.Properties.Settings.Default.Allegiance_CommunitySecuritySystem_TagTestClient_CssServer_Tag_Tag;
+            this.Url = global::ACSSAuth.TagTestClient.Properties.Settings.Default.Allegiance_CommunitySecuritySystem_TagTestClient_CssServer_Tag_Tag;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

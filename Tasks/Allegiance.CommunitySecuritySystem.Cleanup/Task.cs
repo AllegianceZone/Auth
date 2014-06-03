@@ -2,10 +2,10 @@
 using System.Configuration;
 using System.IO;
 using System.Linq;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.DataAccess;
+using ACSSAuth.DataAccess.Enumerations;
 
-namespace Allegiance.CommunitySecuritySystem.Cleanup
+namespace ACSSAuth.Cleanup
 {
     public static class Task
     {

@@ -2,12 +2,12 @@
 using System.Diagnostics;
 using System.Text;
 using System.Threading;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.Properties;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.Properties;
 using System.IO;
 using System.Configuration;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Integration
+namespace ACSSAuth.Client.Integration
 {
     class AllegianceLoader
     {

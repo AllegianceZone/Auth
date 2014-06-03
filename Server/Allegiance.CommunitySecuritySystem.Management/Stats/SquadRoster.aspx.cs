@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats
+namespace ACSSAuth.Management.Stats
 {
 	public partial class SquadRoster : UI.Page
 	{
@@ -23,14 +23,14 @@ namespace Allegiance.CommunitySecuritySystem.Management.Stats
 
 		private void BindData()
 		{
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var allSquads = db.Groups.Where(p => p.IsSquad == true).OrderBy(p => p.Name);
 
-				List<Data.SquadData> squadDatas = new List<Allegiance.CommunitySecuritySystem.Management.Stats.Data.SquadData>();
+				List<Data.SquadData> squadDatas = new List<ACSSAuth.Management.Stats.Data.SquadData>();
 				foreach (var squad in allSquads)
 				{
-					Data.SquadData squadData = new Allegiance.CommunitySecuritySystem.Management.Stats.Data.SquadData();
+					Data.SquadData squadData = new ACSSAuth.Management.Stats.Data.SquadData();
 					squadData.SquadName = squad.Name;
 
 					foreach (var gagr in squad.Group_Alias_GroupRoles)

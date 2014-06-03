@@ -1,14 +1,14 @@
-﻿using Allegiance.CommunitySecuritySystem.BlackboxGenerator;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
-using Allegiance.CommunitySecuritySystem.Server;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+﻿using ACSSAuth.BlackboxGenerator;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.DataAccess;
+using ACSSAuth.DataAccess.Enumerations;
+using ACSSAuth.Server;
+using ACSSAuth.Server.Contracts;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using System;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest
+namespace ACSSAuth.ServerTest
 {
     /// <summary>
     /// Summary description for AuthenticationTests

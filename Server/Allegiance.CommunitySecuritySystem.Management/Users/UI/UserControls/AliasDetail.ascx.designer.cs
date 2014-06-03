@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users.UI.UserControls {
+namespace ACSSAuth.Management.Users.UI.UserControls {
     
     
     public partial class AliasDetail {

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
+using ACSSAuth.Common.Envelopes.AuthInfo;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class MachineRecord
     {

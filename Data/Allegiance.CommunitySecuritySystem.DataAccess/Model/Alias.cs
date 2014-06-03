@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
-using Allegiance.CommunitySecuritySystem.DataAccess.Properties;
+using ACSSAuth.DataAccess.Enumerations;
+using ACSSAuth.Common.Utility;
+using ACSSAuth.DataAccess.Properties;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Alias
     {

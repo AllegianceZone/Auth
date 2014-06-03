@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Linq;
 using System.Linq;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Poll
     {

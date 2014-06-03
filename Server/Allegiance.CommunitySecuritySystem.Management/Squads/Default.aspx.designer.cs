@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Squads {
+namespace ACSSAuth.Management.Squads {
     
     
     public partial class Default {

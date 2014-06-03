@@ -1,8 +1,8 @@
 ﻿using System;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.Client.ClientService
+namespace ACSSAuth.Client.ClientService
 {
     public partial class PollOption
     {

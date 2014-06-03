@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Diagnostics;
-using Allegiance.CommunitySecuritySystem.DataAccess.MembershipProviders;
+using ACSSAuth.DataAccess.MembershipProviders;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	public partial class ResetPassword : UI.Page
 	{

@@ -1,10 +1,10 @@
 ﻿using System.Net;
 using System.Web;
-using Allegiance.CommunitySecuritySystem.BlackboxGenerator;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.BlackboxGenerator;
+using ACSSAuth.DataAccess;
 using System.Linq;
 
-namespace Allegiance.CommunitySecuritySystem.Lobby
+namespace ACSSAuth.Lobby
 {
     public class RequestHandler : IHttpHandler
     {

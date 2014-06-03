@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+using ACSSAuth.Server.Contracts;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer
+namespace ACSSAuth.Management.Enforcer
 {
 	public partial class Default : UI.Page
 	{

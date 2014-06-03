@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Linq.SqlClient;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users
+namespace ACSSAuth.Management.Users
 {
 	public partial class Default : UI.Page
 	{
@@ -44,10 +44,10 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 						LinkManagementLabel = p.Identity.Logins.Count() > 1 ? "Unlink" : "Link"
 					});
 
-				//List<Data.EditableUser> editableUsers = new List<Allegiance.CommunitySecuritySystem.Management.Users.Data.EditableUser>();
+				//List<Data.EditableUser> editableUsers = new List<ACSSAuth.Management.Users.Data.EditableUser>();
 				//foreach (var matchingUser in matchingUsers)
 				//{
-				//    editableUsers.Add(new Allegiance.CommunitySecuritySystem.Management.Users.Data.EditableUser()
+				//    editableUsers.Add(new ACSSAuth.Management.Users.Data.EditableUser()
 				//    {
 				//        DateCreated = matchingUser.DateCreated,
 				//        Email = matchingUser.Email,
@@ -71,7 +71,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 			}
 		}
 
-		//private string FormatUnlinkAccountHtml(Allegiance.CommunitySecuritySystem.DataAccess.Login login)
+		//private string FormatUnlinkAccountHtml(ACSSAuth.DataAccess.Login login)
 		//{
 		//    if (login.Identity.Links.Count > 0)
 		//        return String.Format("<a href=\"ManageLinks.aspx?loginID={0}&searchText={1}\">Unlink</a>", login.Id, txtSearch.Text);

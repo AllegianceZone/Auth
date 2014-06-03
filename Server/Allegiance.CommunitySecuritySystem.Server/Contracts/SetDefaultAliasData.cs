@@ -1,8 +1,8 @@
 ﻿using System.Runtime.Serialization;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Linq;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Contracts
+namespace ACSSAuth.Server.Contracts
 {
     [DataContract]
     public class SetDefaultAliasData : AuthenticatedData

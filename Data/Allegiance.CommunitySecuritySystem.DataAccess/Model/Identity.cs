@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.Common.Envelopes.AuthInfo;
+using ACSSAuth.DataAccess.Enumerations;
 using System;
 using System.Data.Linq;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Identity
     {

@@ -1,4 +1,4 @@
-﻿namespace Allegiance.CommunitySecuritySystem.Client.Install
+﻿namespace ACSSAuth.Client.Install
 {
 	partial class BetaInstall
 	{

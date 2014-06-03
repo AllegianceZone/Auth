@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.Enumerations
+namespace ACSSAuth.DataAccess.Enumerations
 {
     public enum SessionStatusEnum
     {

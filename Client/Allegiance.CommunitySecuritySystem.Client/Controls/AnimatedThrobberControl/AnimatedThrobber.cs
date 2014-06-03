@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 // From a sample at: http://dev.nomad-net.info/articles/animatedthrobber
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls.AnimatedThrobberControl
+namespace ACSSAuth.Client.Controls.AnimatedThrobberControl
 {
   [Designer(typeof(AnimatedThrobberDesigner))]
   [DefaultProperty("Style")]

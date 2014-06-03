@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.VirtualMachineMarkers {
+namespace ACSSAuth.Management.Content.VirtualMachineMarkers {
     
     
     public partial class Default {

@@ -3,9 +3,9 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest.DataAccessTests
+namespace ACSSAuth.ServerTest.DataAccessTests
 {
 	/// <summary>
 	/// Summary description for AliasTest
@@ -68,7 +68,7 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest.DataAccessTests
 			string withToken = "?BackTrak";
 			string withTagAndToken = "*BackTrak@BS";
 
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				Assert.AreEqual(noTags, DataAccess.Alias.GetCallsignFromStringWithTokensAndTags(db, noTags));
 				Assert.AreEqual(noTags, DataAccess.Alias.GetCallsignFromStringWithTokensAndTags(db, withTag));

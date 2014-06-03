@@ -2,15 +2,15 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
+using ACSSAuth.Client.Integration;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.ClientService;
 using System.Threading;
 using Microsoft.Win32;
 using System.Collections.Generic;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
     static class Program
     {

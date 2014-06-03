@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.Motd {
+namespace ACSSAuth.Management.Content.Motd {
     
     
     public partial class Default {

@@ -7,9 +7,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.Integration;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
 	public partial class OfflineLaunch : Form
 	{

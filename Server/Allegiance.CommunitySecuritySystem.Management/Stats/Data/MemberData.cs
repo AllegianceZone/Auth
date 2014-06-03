@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats.Data
+namespace ACSSAuth.Management.Stats.Data
 {
 	public class MemberData
 	{

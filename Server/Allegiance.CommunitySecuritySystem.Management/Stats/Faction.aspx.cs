@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats
+namespace ACSSAuth.Management.Stats
 {
 	public partial class Faction : UI.Page
 	{
@@ -28,11 +28,11 @@ namespace Allegiance.CommunitySecuritySystem.Management.Stats
 						db.StatsFactions.Select(p => new { FactionName = p.LossFactionName} )
 					).Distinct().OrderBy(p => p.FactionName);
 
-				List<Data.FactionData> allFactionData = new List<Allegiance.CommunitySecuritySystem.Management.Stats.Data.FactionData>();
+				List<Data.FactionData> allFactionData = new List<ACSSAuth.Management.Stats.Data.FactionData>();
 
 				foreach (var winFactionName in allFactionNames)
 				{
-					Data.FactionData factionData = new Allegiance.CommunitySecuritySystem.Management.Stats.Data.FactionData();
+					Data.FactionData factionData = new ACSSAuth.Management.Stats.Data.FactionData();
 					factionData.Name = winFactionName.FactionName;
 					factionData.Stats = String.Empty;
 

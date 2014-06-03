@@ -5,14 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Management.Properties;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Properties;
+using ACSSAuth.Management.Business;
 using System.Security;
 using System.Security.Cryptography;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Transactions;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
+namespace ACSSAuth.Management.Content.AutoUpdate
 {
 	public partial class EditPackage : UI.Page
 	{

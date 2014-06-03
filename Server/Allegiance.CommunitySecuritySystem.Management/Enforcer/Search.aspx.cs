@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer
+namespace ACSSAuth.Management.Enforcer
 {
 	public partial class Search : UI.Page
 	{

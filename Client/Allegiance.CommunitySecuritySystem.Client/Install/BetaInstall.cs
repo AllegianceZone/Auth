@@ -6,15 +6,15 @@ using System.Configuration.Install;
 using Microsoft.Win32;
 using System.Text;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.Integration;
 using System.Diagnostics;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Utility;
 using System.Net;
 using System.Runtime.InteropServices;
 
 
-namespace Allegiance.CommunitySecuritySystem.Client.Install
+namespace ACSSAuth.Client.Install
 {
 	[RunInstaller(true)]
 	public partial class BetaInstall : Installer

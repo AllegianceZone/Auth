@@ -5,7 +5,7 @@ using System.Web;
 using Microsoft.Win32;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	public class Utility
 	{

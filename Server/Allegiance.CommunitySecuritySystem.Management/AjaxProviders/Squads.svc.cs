@@ -7,7 +7,7 @@ using System.ServiceModel.Web;
 using System.Collections.Generic;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Management.AjaxProviders
+namespace ACSSAuth.Management.AjaxProviders
 {
 	[ServiceBehavior(IncludeExceptionDetailInFaults = true)]
 	[ServiceContract(Namespace = "AjaxProviders")]
@@ -50,7 +50,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.AjaxProviders
 				DateTime dateToSend = DateTime.Parse(sendOnOrAfterDateTime);
 				DateTime dateExpires = DateTime.Parse(expiresAfterDateTime);
 
-				DataAccess.GroupMessage groupMessage = new Allegiance.CommunitySecuritySystem.DataAccess.GroupMessage()
+				DataAccess.GroupMessage groupMessage = new ACSSAuth.DataAccess.GroupMessage()
 				{
 					DateCreated = DateTime.Now,
 					DateExpires = dateExpires,

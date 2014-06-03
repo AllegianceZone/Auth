@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     class Encryption<T> : IDisposable where T : HashAlgorithm, IDisposable
     {

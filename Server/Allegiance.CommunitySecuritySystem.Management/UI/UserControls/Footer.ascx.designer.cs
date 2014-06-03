@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.UI.UserControls {
+namespace ACSSAuth.Management.UI.UserControls {
     
     
     public partial class Footer {

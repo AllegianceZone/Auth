@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
 	partial class AboutBoxForm : Form
 	{

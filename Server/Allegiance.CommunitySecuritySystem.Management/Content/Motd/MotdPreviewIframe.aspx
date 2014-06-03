@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/NoChrome.Master"
-	AutoEventWireup="true" CodeBehind="MotdPreviewIframe.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.Motd.MotdPreviewIframe" %>
+	AutoEventWireup="true" CodeBehind="MotdPreviewIframe.aspx.cs" Inherits="ACSSAuth.Management.Content.Motd.MotdPreviewIframe" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

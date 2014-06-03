@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UI/MasterPages/NoChrome.Master" CodeBehind="PublicationDetailsIFrame.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.PublicationDetailsIFrame" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UI/MasterPages/NoChrome.Master" CodeBehind="PublicationDetailsIFrame.aspx.cs" Inherits="ACSSAuth.Management.Content.AutoUpdate.PublicationDetailsIFrame" %>
 
 
 <%@ Register src="UI/UserControls/PackageContents.ascx" tagname="PackageContents" tagprefix="uc1" %>

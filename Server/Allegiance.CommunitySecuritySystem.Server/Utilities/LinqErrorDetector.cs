@@ -7,7 +7,7 @@ using System.Data.Linq.Mapping;
 using System.Data.Linq;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Utilities
+namespace ACSSAuth.Server.Utilities
 {
 	// Modified from sample at: 
 	// http://stackoverflow.com/questions/3666954/string-or-binary-data-would-be-truncated-linq-exception-cant-find-which-fiel

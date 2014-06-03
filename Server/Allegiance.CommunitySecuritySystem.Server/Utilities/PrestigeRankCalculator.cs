@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Utilities
+namespace ACSSAuth.Server.Utilities
 {
     public class PrestigeRankCalculator
     {

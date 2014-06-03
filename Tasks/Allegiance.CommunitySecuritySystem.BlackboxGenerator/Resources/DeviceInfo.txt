@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.Blackbox
+namespace ACSSAuth.Blackbox
 {
     public class DeviceInfo
     {

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Data.Linq.SqlClient;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer
+namespace ACSSAuth.Management.Enforcer
 {
 	public partial class ServerLogs : UI.Page
 	{

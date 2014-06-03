@@ -4,8 +4,8 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.DataAccess;
 using Microsoft.SqlServer.Management.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SMO = Microsoft.SqlServer.Management.Smo;
@@ -13,9 +13,9 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Linq;
 using System.Collections.Generic;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest
+namespace ACSSAuth.ServerTest
 {
 	[TestClass]
     public class BaseTest

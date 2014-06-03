@@ -3,9 +3,9 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest
+namespace ACSSAuth.ServerTest
 {
     /// <summary>
     /// Summary description for SecurityTest

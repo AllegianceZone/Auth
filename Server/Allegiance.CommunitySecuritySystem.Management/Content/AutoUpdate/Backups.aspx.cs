@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Business;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
+namespace ACSSAuth.Management.Content.AutoUpdate
 {
 	public partial class Backups : UI.Page
 	{
@@ -19,7 +19,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
 
 		private void BindData()
 		{
-			List<Data.BackupItem> backupItems = new List<Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.Data.BackupItem>();
+			List<Data.BackupItem> backupItems = new List<ACSSAuth.Management.Content.AutoUpdate.Data.BackupItem>();
 
 			List<FileInfo> backupInfos = AutoUpdateManager.GetAvailableBackups();
 			foreach (FileInfo backupInfo in backupInfos)

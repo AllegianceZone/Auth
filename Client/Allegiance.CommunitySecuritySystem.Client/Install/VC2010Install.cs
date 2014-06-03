@@ -9,7 +9,7 @@ using System.Net;
 using System.IO;
 using System.Diagnostics;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Install
+namespace ACSSAuth.Client.Install
 {
 	public partial class VC2010Install : Form
 	{

@@ -8,15 +8,15 @@ using System.Web.UI.WebControls;
 using System.Net.Mail;
 using System.Net.Configuration;
 using System.Configuration;
-using Allegiance.CommunitySecuritySystem.Management.Properties;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Properties;
+using ACSSAuth.Management.Business;
 using System.Reflection;
 using System.Text;
 using System.Collections;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.DataAccess;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	public class Global : System.Web.HttpApplication
 	{

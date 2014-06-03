@@ -6,9 +6,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.Linq.SqlClient;
 using System.Configuration;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Server.Data;
+using ACSSAuth.Server.Data;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest
+namespace ACSSAuth.ServerTest
 {
 	/// <summary>
 	/// Summary description for TagTest
@@ -73,9 +73,9 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 			{
 				Console.WriteLine("Creating TAG object.");
 
-				Allegiance.CommunitySecuritySystem.Server.Tag tag = new Allegiance.CommunitySecuritySystem.Server.Tag();
+				ACSSAuth.Server.Tag tag = new ACSSAuth.Server.Tag();
 
-				using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+				using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 				{
 					Console.WriteLine("Looking for files.");
 
@@ -119,7 +119,7 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 		{
 			string compressedXml = GetCompressedGameDataXml();
 
-			Allegiance.CommunitySecuritySystem.Server.Tag tag = new Allegiance.CommunitySecuritySystem.Server.Tag();
+			ACSSAuth.Server.Tag tag = new ACSSAuth.Server.Tag();
 			
 			string message;
 			int result = tag.SaveGameData(compressedXml, out message);
@@ -131,7 +131,7 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 		{
 			int testPilot1ID;
 			int testPilot2ID;
-			using(DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using(DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var testPilot1Alias = DataAccess.Alias.GetAliasByCallsign(db, "BackTrak");
 				testPilot1ID = testPilot1Alias.Id;
@@ -142,7 +142,7 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 
 			int gameID = 1234567;
 
-			Allegiance.CommunitySecuritySystem.Server.Data.GameDataset gameData = new Allegiance.CommunitySecuritySystem.Server.Data.GameDataset();
+			ACSSAuth.Server.Data.GameDataset gameData = new ACSSAuth.Server.Data.GameDataset();
 
 			AddGame(gameData, gameID);
 
@@ -167,7 +167,7 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 			return compressedXml;
 		}
 
-		private void AddCommanderToTeam(Allegiance.CommunitySecuritySystem.Server.Data.GameDataset gameData, string commanderCallsign, int teamID)
+		private void AddCommanderToTeam(ACSSAuth.Server.Data.GameDataset gameData, string commanderCallsign, int teamID)
 		{
 			Random random = new Random();
 
@@ -181,11 +181,11 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 			gameData.TeamMember.AddTeamMemberRow(teamMemberRow);
 		}
 
-		private void AddChatLogMessages(Allegiance.CommunitySecuritySystem.Server.Data.GameDataset gameData, int gameID, int chatLogCount)
+		private void AddChatLogMessages(ACSSAuth.Server.Data.GameDataset gameData, int gameID, int chatLogCount)
 		{
 			Random random = new Random();
 
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				DataAccess.Alias[] aliases = db.Alias.ToArray();
 
@@ -204,11 +204,11 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 			}
 		}
 
-		private void AddRandomPlayersToTeam(Allegiance.CommunitySecuritySystem.Server.Data.GameDataset gameData, int teamID, int playerCount)
+		private void AddRandomPlayersToTeam(ACSSAuth.Server.Data.GameDataset gameData, int teamID, int playerCount)
 		{
 			Random random = new Random();
 
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				DataAccess.Alias[] aliases = db.Alias.GroupBy(p => p.LoginId, r => r).Select(p => p.First()).Where(p => p.Callsign.StartsWith("Test")).ToArray();
 
@@ -226,9 +226,9 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 			}
 		}
 
-		private void AddTeams(Allegiance.CommunitySecuritySystem.Server.Data.GameDataset gameData, int gameID)
+		private void AddTeams(ACSSAuth.Server.Data.GameDataset gameData, int gameID)
 		{
-			Allegiance.CommunitySecuritySystem.Server.Data.GameDataset.TeamRow teamRow = gameData.Team.NewTeamRow();
+			ACSSAuth.Server.Data.GameDataset.TeamRow teamRow = gameData.Team.NewTeamRow();
 
 			teamRow.Commander = "^Orion@PK";
 			teamRow.Faction = "Rixian Unity";
@@ -265,9 +265,9 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 			gameData.Team.AddTeamRow(teamRow);
 		}
 
-		private void AddGame(Allegiance.CommunitySecuritySystem.Server.Data.GameDataset gameData, int gameID)
+		private void AddGame(ACSSAuth.Server.Data.GameDataset gameData, int gameID)
 		{
-			Allegiance.CommunitySecuritySystem.Server.Data.GameDataset.GameRow gameRow = gameData.Game.NewGameRow();
+			ACSSAuth.Server.Data.GameDataset.GameRow gameRow = gameData.Game.NewGameRow();
 			gameRow.AllowDefections = true;
 			gameRow.AllowDevelopments = true;
 			gameRow.AllowShipyards = true;
@@ -293,11 +293,11 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 			gameData.Game.AddGameRow(gameRow);
 		}
 
-		private void AddRandomGameEvents(Allegiance.CommunitySecuritySystem.Server.Data.GameDataset gameData, int gameID, int eventCount)
+		private void AddRandomGameEvents(ACSSAuth.Server.Data.GameDataset gameData, int gameID, int eventCount)
 		{
 			Random random = new Random();
 
-			using(DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using(DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				//Alias.GroupBy(p => p.LoginId, r => r.Id).Select(p => p.First())
 
@@ -318,7 +318,7 @@ namespace Allegiance.CommunitySecuritySystem.ServerTest
 					while (indirectID == performerID || indirectID == targetID)
 						indirectID = random.Next(0, aliases.Length);
 
-					Allegiance.CommunitySecuritySystem.Server.Data.GameDataset.GameEventRow gameEventRow = gameData.GameEvent.NewGameEventRow();
+					ACSSAuth.Server.Data.GameDataset.GameEventRow gameEventRow = gameData.GameEvent.NewGameEventRow();
 					gameEventRow.EventID = (int)Common.Enumerations.AllegianceEventIDs.ShipKilled; ;
 					gameEventRow.EventTime = DateTime.Now.AddMinutes(-1 * random.Next(0, 10));
 					gameEventRow.GameID = gameID;

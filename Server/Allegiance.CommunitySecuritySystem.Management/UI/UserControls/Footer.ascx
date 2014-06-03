@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.UI.UserControls.Footer" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="ACSSAuth.Management.UI.UserControls.Footer" %>
 <center>
 	<table style="white-space: nowrap;">
 		<tr>

@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.ServerTest;
+using ACSSAuth.ServerTest;
 using System.Net;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
-using Allegiance.CommunitySecuritySystem.TagTestClient.Properties;
+using ACSSAuth.TagTestClient.Properties;
 using System.IO;
 using System.Configuration;
 
-namespace Allegiance.CommunitySecuritySystem.TagTestClient
+namespace ACSSAuth.TagTestClient
 {
 	class Program
 	{
@@ -32,7 +32,7 @@ namespace Allegiance.CommunitySecuritySystem.TagTestClient
 			//    });
 
 
-			//CssServer.Tag.Tag tag = new Allegiance.CommunitySecuritySystem.TagTestClient.CssServer.Tag.Tag();
+			//CssServer.Tag.Tag tag = new ACSSAuth.TagTestClient.CssServer.Tag.Tag();
 
 			////tag.Url = Settings.Default.Allegiance_CommunitySecuritySystem_TagTestClient_CssServer_Tag_Tag;
 

@@ -5,7 +5,7 @@ using System.Web;
 using System.Configuration.Provider;
 using System.Data.Linq.SqlClient;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.MembershipProviders
+namespace ACSSAuth.DataAccess.MembershipProviders
 {
 	public class CssRoleProvider : System.Web.Security.RoleProvider
 	{
@@ -58,7 +58,7 @@ namespace Allegiance.CommunitySecuritySystem.DataAccess.MembershipProviders
 		{
 			using (var db = new DataAccess.CSSDataContext())
 			{
-				db.Roles.InsertOnSubmit(new Allegiance.CommunitySecuritySystem.DataAccess.Role()
+				db.Roles.InsertOnSubmit(new ACSSAuth.DataAccess.Role()
 				{
 					Name = roleName
 				});

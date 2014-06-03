@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/NoChrome.Master" AutoEventWireup="true" CodeBehind="PublicationDownloaderIframe.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.PublicationDownloaderIframe" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/NoChrome.Master" AutoEventWireup="true" CodeBehind="PublicationDownloaderIframe.aspx.cs" Inherits="ACSSAuth.Management.Content.AutoUpdate.PublicationDownloaderIframe" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

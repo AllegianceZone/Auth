@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Contracts
+namespace ACSSAuth.Server.Contracts
 {
     [DataContract]
     public class LobbyResult

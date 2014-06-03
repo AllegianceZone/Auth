@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Security.Principal;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users
+namespace ACSSAuth.Management.Users
 {
 	public partial class GlobalMessage : UI.Page
 	{

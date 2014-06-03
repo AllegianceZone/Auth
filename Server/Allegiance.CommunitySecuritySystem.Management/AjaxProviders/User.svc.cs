@@ -9,7 +9,7 @@ using System.Web;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.Management.AjaxProviders
+namespace ACSSAuth.Management.AjaxProviders
 {
 	// Delete this after checkin, this is unused.
 

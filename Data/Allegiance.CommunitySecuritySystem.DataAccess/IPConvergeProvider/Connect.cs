@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using CookComputing.XmlRpc;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.IPConvergeProvider
+namespace ACSSAuth.DataAccess.IPConvergeProvider
 {
 	public class Connect
 	{

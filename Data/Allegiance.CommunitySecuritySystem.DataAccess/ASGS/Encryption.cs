@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.ASGS
+namespace ACSSAuth.DataAccess.ASGS
 {
 	public class Encryption
 	{

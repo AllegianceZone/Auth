@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats.UI
+namespace ACSSAuth.Management.Stats.UI
 {
 	public class Page : Management.UI.Page
 	{

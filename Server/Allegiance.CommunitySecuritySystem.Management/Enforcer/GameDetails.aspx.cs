@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer
+namespace ACSSAuth.Management.Enforcer
 {
 	public partial class GameDetails : UI.Page
 	{

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" EnableViewState="false" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="BanList.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Stats.BanList" %>
+﻿<%@ Page Title="" EnableViewState="false" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="BanList.aspx.cs" Inherits="ACSSAuth.Management.Stats.BanList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

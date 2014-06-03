@@ -4,13 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Business;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Management.Properties;
+using ACSSAuth.Management.Properties;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
+namespace ACSSAuth.Management.Content.AutoUpdate
 {
 	public partial class BackupDetails : UI.Page
 	{
@@ -54,7 +54,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
 			BackupItems backupItems = AutoUpdateManager.GetFilesInBackup(this.Target);
 			BackupCreationDate = Format.DateTime(AutoUpdateManager.GetBackupInfo(this.Target).CreationTime);
 
-			List<Data.RestorableFile> restorableFiles = new List<Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.Data.RestorableFile>();
+			List<Data.RestorableFile> restorableFiles = new List<ACSSAuth.Management.Content.AutoUpdate.Data.RestorableFile>();
 			foreach (UpdateItem packageFile in backupItems.PackageFiles)
 			{
 				string includedImage;
@@ -78,7 +78,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
 					protectedImage = Page.ResolveUrl("~/Images/dg_unprotected.png");
 				}
 
-				restorableFiles.Add(new Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.Data.RestorableFile()
+				restorableFiles.Add(new ACSSAuth.Management.Content.AutoUpdate.Data.RestorableFile()
 				{
 					Container = packageFile.PackageName,
 					DateCreated = Format.DateTime(packageFile.FileInfo.CreationTime),

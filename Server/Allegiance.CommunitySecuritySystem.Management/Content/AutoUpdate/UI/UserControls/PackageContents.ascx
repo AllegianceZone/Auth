@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="PackageContents.ascx.cs"
-	Inherits="Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.UI.UserControls.PackageContents" %>
+	Inherits="ACSSAuth.Management.Content.AutoUpdate.UI.UserControls.PackageContents" %>
 	
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 	

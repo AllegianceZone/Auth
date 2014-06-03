@@ -3,11 +3,11 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.BlackboxGenerator
+namespace ACSSAuth.BlackboxGenerator
 {
     public static class Test
     {

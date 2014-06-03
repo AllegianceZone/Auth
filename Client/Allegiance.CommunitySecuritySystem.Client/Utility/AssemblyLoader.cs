@@ -5,7 +5,7 @@ using System.Security;
 using System.Security.Permissions;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     [Serializable]
     internal class AssemblyLoader : MarshalByRefObject
@@ -51,10 +51,10 @@ namespace Allegiance.CommunitySecuritySystem.Client.Utility
 
 				Log.Write("AssemblyLoader::ValidateEntryAssembly() loaded assembly: " + ((assembly != null) ? assembly.GetType().ToString() : "null"));
 
-                var validatorType   = assembly.GetType("Allegiance.CommunitySecuritySystem.Blackbox.Validator");
-                var machineInfoType = assembly.GetType("Allegiance.CommunitySecuritySystem.Blackbox.MachineInformation");
-                var deviceInfoType  = assembly.GetType("Allegiance.CommunitySecuritySystem.Blackbox.DeviceInfo");
-                var deviceTypeType  = assembly.GetType("Allegiance.CommunitySecuritySystem.Blackbox.DeviceType");
+                var validatorType   = assembly.GetType("ACSSAuth.Blackbox.Validator");
+                var machineInfoType = assembly.GetType("ACSSAuth.Blackbox.MachineInformation");
+                var deviceInfoType  = assembly.GetType("ACSSAuth.Blackbox.DeviceInfo");
+                var deviceTypeType  = assembly.GetType("ACSSAuth.Blackbox.DeviceType");
                 var machineInfo     = Activator.CreateInstance(machineInfoType);
 
 				Log.Write("AssemblyLoader::ValidateEntryAssembly() machine info created.");

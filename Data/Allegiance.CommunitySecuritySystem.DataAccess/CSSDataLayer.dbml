@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CSS" Class="CSSDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=CSS;Persist Security Info=True;User ID=css_server" SettingsObjectName="Allegiance.CommunitySecuritySystem.DataAccess.Properties.Settings" SettingsPropertyName="CSSConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=CSS;Persist Security Info=True;User ID=css_server" SettingsObjectName="ACSSAuth.DataAccess.Properties.Settings" SettingsPropertyName="CSSConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.UsedKey" Member="UsedKeys">
     <Type Name="UsedKey">
       <Column Name="LoginId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

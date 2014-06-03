@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using System.Xml;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     sealed partial class DataStore
     {

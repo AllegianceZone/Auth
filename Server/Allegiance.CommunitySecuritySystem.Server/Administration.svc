@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Factory="Allegiance.CommunitySecuritySystem.Server.Providers.HostFactory" Service="Allegiance.CommunitySecuritySystem.Server.Administration" CodeBehind="Administration.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Factory="ACSSAuth.Server.Providers.HostFactory" Service="ACSSAuth.Server.Administration" CodeBehind="Administration.svc.cs" %>

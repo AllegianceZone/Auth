@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Runtime.Serialization;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.Enumerations
+namespace ACSSAuth.DataAccess.Enumerations
 {
     /// <summary>
     /// Registered: You already have this alias

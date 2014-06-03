@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" EnableViewState="false" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="Faction.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Stats.Faction" %>
+﻿<%@ Page Title="" EnableViewState="false" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="Faction.aspx.cs" Inherits="ACSSAuth.Management.Stats.Faction" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

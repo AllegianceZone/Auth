@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Configuration;
 
-namespace Allegiance.CommunitySecuritySystem.TaskHandler
+namespace ACSSAuth.TaskHandler
 {
     static class Configuration
     {

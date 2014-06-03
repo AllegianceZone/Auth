@@ -5,10 +5,10 @@ using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.DataAccess;
+using ACSSAuth.DataAccess.Enumerations;
 
-namespace Allegiance.CommunitySecuritySystem.BlackboxGenerator
+namespace ACSSAuth.BlackboxGenerator
 {
     internal static class Compiler
     {

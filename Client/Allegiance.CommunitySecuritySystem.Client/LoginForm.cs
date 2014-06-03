@@ -2,11 +2,11 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.ClientService;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
     public partial class LoginForm : LoginBaseForm
     {

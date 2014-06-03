@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Collections.Specialized;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Extensions
+namespace ACSSAuth.Common.Extensions
 {
     public static class NameValueCollectionExtensions
     {

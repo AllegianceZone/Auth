@@ -1,10 +1,10 @@
-﻿using Allegiance.CommunitySecuritySystem.Client.Utility;
+﻿using ACSSAuth.Client.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Security.AccessControl;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.ClientTest.Utility
+namespace ACSSAuth.ClientTest.Utility
 {
     
     

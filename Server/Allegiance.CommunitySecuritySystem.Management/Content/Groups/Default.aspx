@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" MaintainScrollPositionOnPostback="true" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.Groups.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" MaintainScrollPositionOnPostback="true" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ACSSAuth.Management.Content.Groups.Default" %>
 
 <%@ Register Assembly="System.Web.Entity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
 	Namespace="System.Web.UI.WebControls" TagPrefix="asp" %>
@@ -102,7 +102,7 @@
 		 onclick="btnSaveNewGroup_Click" />
 	
 	<asp:LinqDataSource ID="ldsGroups" runat="server" 
-		ContextTypeName="Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext"
+		ContextTypeName="ACSSAuth.DataAccess.CSSDataContext"
 		TableName="Groups"
 		EnableUpdate="True"
 		EnableDelete="True" onupdating="ldsGroups_Updating">

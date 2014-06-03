@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.Polls {
+namespace ACSSAuth.Management.Content.Polls {
     
     
     public partial class EditPoll {

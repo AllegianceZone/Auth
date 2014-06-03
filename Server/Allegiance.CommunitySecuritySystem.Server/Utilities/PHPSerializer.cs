@@ -11,7 +11,7 @@ using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Utilities
+namespace ACSSAuth.Server.Utilities
 {
 	/// <summary>
 	/// Serializer Class.

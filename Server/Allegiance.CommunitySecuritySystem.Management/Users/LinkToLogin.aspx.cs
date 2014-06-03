@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Linq.SqlClient;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users
+namespace ACSSAuth.Management.Users
 {
 	public partial class LinkToLogin : UI.Page
 	{
@@ -74,7 +74,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 		{
 			int targetLoginID = Int32.Parse(e.CommandArgument.ToString());
 
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var primaryIdentity = db.Logins.FirstOrDefault(p => p.Id == PrimaryLoginID).Identity;
 				var secondaryIdentity = db.Logins.FirstOrDefault(p => p.Id == targetLoginID).Identity;

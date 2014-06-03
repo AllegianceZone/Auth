@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Services;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Management.HttpHandlers
+namespace ACSSAuth.Management.HttpHandlers
 {
 	/// <summary>
 	/// Summary description for $codebehindclassname$

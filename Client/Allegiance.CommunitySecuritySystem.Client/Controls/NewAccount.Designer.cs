@@ -1,4 +1,4 @@
-﻿namespace Allegiance.CommunitySecuritySystem.Client.Controls
+﻿namespace ACSSAuth.Client.Controls
 {
 	partial class NewAccount
 	{
@@ -40,7 +40,7 @@
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this._captchaPanel = new System.Windows.Forms.Panel();
-			this._animatedThrobber = new Allegiance.CommunitySecuritySystem.Client.Controls.AnimatedThrobberControl.AnimatedThrobber();
+			this._animatedThrobber = new ACSSAuth.Client.Controls.AnimatedThrobberControl.AnimatedThrobber();
 			this._verificationCodePictureBox = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();

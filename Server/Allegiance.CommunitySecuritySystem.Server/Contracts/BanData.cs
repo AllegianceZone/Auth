@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Security.Authentication;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.DataAccess;
 using System.Data.SqlTypes;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Contracts
+namespace ACSSAuth.Server.Contracts
 {
     [DataContract]
     public class BanData : AuthenticatedData

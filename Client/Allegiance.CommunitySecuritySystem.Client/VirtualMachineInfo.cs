@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
 	public partial class VirtualMachineInfo : Form
 	{

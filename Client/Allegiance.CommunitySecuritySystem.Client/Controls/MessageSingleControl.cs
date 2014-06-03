@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Service;
+using ACSSAuth.Client.Service;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
     public partial class MessageSingleControl : UserControl
     {

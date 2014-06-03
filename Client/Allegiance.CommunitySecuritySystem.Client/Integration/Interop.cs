@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Integration
+namespace ACSSAuth.Client.Integration
 {
 	// http://www.codekeep.net/CSharp/code/snippets/18461/EnvironmentIs64Bit/view.aspx
 	[Obsolete("No!", true)]

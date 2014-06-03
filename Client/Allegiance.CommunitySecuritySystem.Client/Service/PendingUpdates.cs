@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
+using ACSSAuth.Client.ClientService;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Service
+namespace ACSSAuth.Client.Service
 {
 	public class PendingUpdates
 	{

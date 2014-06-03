@@ -5,9 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Service;
+using ACSSAuth.Client.Service;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
 	public partial class UpdateCheckForm : Form
 	{

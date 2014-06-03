@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.IO;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Utility
+namespace ACSSAuth.Common.Utility
 {
     public static class Encryption
     {

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Management.Properties;
+using ACSSAuth.Management.Properties;
 using System.Security.Cryptography;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Business
+namespace ACSSAuth.Management.Business
 {
 	public class AutoUpdateManager
 	{
@@ -796,7 +796,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Business
 
 						if (autoUpdateFile == null)
 						{
-							autoUpdateFile = new Allegiance.CommunitySecuritySystem.DataAccess.AutoUpdateFile()
+							autoUpdateFile = new ACSSAuth.DataAccess.AutoUpdateFile()
 							{
 								Filename = relativeFilePath,
 								IsProtected = fileInfo.IsProtected
@@ -818,7 +818,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Business
 
 						if (lobbyFile == null)
 						{
-							lobbyFile = new Allegiance.CommunitySecuritySystem.DataAccess.AutoUpdateFile_Lobby()
+							lobbyFile = new ACSSAuth.DataAccess.AutoUpdateFile_Lobby()
 							{
 								AutoUpdateFileId = autoUpdateFile.Id,
 								CurrentVersion = fileVersion,

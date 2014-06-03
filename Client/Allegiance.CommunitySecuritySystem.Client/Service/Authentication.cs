@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.Integration;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Service
+namespace ACSSAuth.Client.Service
 {
 	static class Authentication
 	{

@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Allegiance.CommunitySecuritySystem.Management.AjaxProviders.User" CodeBehind="User.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ACSSAuth.Management.AjaxProviders.User" CodeBehind="User.svc.cs" %>

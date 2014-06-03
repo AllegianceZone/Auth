@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.Client.ClientService
+namespace ACSSAuth.Client.ClientService
 {
     public partial class AuthenticatedData
     {

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats
+namespace ACSSAuth.Management.Stats
 {
 	public partial class Leaderboard : UI.Page
 	{
@@ -20,7 +20,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Stats
 
 		private void BindData()
 		{
-			using (DataAccess.CSSStatsDataContext statsDB = new Allegiance.CommunitySecuritySystem.DataAccess.CSSStatsDataContext())
+			using (DataAccess.CSSStatsDataContext statsDB = new ACSSAuth.DataAccess.CSSStatsDataContext())
 			{
 				//var sortedLeaderboard = statsDB.StatsLeaderboards
 				//    .Where(p => p.DateModified > DateTime.Now.AddDays(-7))

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer {
+namespace ACSSAuth.Management.Enforcer {
     
     
     public partial class Default {
@@ -20,6 +20,6 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls.Ban ucBan;
+        protected global::ACSSAuth.Management.Enforcer.UI.UserControls.Ban ucBan;
     }
 }

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Win32;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Integration;
+using ACSSAuth.Client.Utility;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Install
+namespace ACSSAuth.Client.Install
 {
 	/// <summary>
 	/// If you need to upgrade things on the end users system during an auto-update push, put them in here.

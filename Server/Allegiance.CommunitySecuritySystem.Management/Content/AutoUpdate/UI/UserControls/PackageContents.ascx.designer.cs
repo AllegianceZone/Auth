@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.UI.UserControls {
+namespace ACSSAuth.Management.Content.AutoUpdate.UI.UserControls {
     
     
     public partial class PackageContents {

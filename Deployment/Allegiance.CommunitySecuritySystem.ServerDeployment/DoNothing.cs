@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.LobbyDeployment
+namespace ACSSAuth.LobbyDeployment
 {
 	/// <summary>
 	///  This class only exists to enable the post build job to run. 

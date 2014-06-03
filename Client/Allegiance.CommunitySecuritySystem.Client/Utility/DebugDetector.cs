@@ -2,9 +2,9 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
+using ACSSAuth.Client.Integration;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     internal class DebugDetector
     {

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.Management.Properties;
+using ACSSAuth.DataAccess;
+using ACSSAuth.Management.Properties;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	public partial class CreateUser : UI.Page
 	{
@@ -59,8 +59,8 @@ namespace Allegiance.CommunitySecuritySystem.Management
 
 			if (ViewState["captchaToken"] == null)
 			{
-				Allegiance.CommunitySecuritySystem.Server.ClientService cs = new Server.ClientService();
-				Allegiance.CommunitySecuritySystem.Server.Contracts.CaptchaResult captcha = cs.GetCaptcha(200, 100);
+				ACSSAuth.Server.ClientService cs = new Server.ClientService();
+				ACSSAuth.Server.Contracts.CaptchaResult captcha = cs.GetCaptcha(200, 100);
 
 				ViewState["captchaToken"] = captcha.CaptchaToken;
 				captchaToken = captcha.CaptchaToken;
@@ -87,7 +87,7 @@ namespace Allegiance.CommunitySecuritySystem.Management
 
 		protected void cvLegacyAliasCheck_ServerValidate(object source, ServerValidateEventArgs args)
 		{
-			if (Allegiance.CommunitySecuritySystem.DataAccess.Properties.Settings.Default.UseAsgsForLegacyCallsignCheck == true)
+			if (ACSSAuth.DataAccess.Properties.Settings.Default.UseAsgsForLegacyCallsignCheck == true)
 			{
 				TextBox userNameTextBox = (TextBox)CreateUserWizard1.WizardSteps[0].Controls[0].FindControl("UserName");
 				TextBox passwordTextBox = (TextBox)CreateUserWizard1.WizardSteps[0].Controls[0].FindControl("Password");

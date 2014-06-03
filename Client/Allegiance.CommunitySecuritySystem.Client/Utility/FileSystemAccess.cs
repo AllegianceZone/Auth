@@ -6,7 +6,7 @@ using System.IO;
 using System.Security.Principal;
 using System.Diagnostics;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
 	public static class FileSystemAccess
 	{

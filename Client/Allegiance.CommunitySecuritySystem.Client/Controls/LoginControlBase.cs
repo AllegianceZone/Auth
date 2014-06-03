@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls
+namespace ACSSAuth.Client.Controls
 {
 	public class LoginControlBase : UserControl
 	{

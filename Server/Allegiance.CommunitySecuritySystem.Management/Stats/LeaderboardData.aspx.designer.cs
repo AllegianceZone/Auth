@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats {
+namespace ACSSAuth.Management.Stats {
     
     
     public partial class LeaderboardData {

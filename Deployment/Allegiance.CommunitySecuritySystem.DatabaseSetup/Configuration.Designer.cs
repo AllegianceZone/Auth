@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.DatabaseSetup {
+namespace ACSSAuth.DatabaseSetup {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -1,4 +1,4 @@
-﻿<%@ Master EnableViewState="true" Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.UI.MasterPages.Default" %>
+﻿<%@ Master EnableViewState="true" Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="ACSSAuth.Management.UI.MasterPages.Default" %>
 
 <%@ Register src="../UserControls/TopNavigation.ascx" tagname="TopNavigation" tagprefix="uc1" %>
 

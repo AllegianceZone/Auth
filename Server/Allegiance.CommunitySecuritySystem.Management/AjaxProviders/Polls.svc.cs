@@ -7,9 +7,9 @@ using System.ServiceModel.Web;
 using System.Collections.Generic;
 using System.Web;
 using System.Security.Principal;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.Management.AjaxProviders
+namespace ACSSAuth.Management.AjaxProviders
 {
 	[ServiceBehavior(IncludeExceptionDetailInFaults = true)]
 	[ServiceContract(Namespace = "AjaxProviders")]

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats
+namespace ACSSAuth.Management.Stats
 {
 	public partial class BanList : UI.Page
 	{
@@ -19,7 +19,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Stats
 
 		private void BindData()
 		{
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				string banListType = Request.Params["type"] ?? String.Empty;
 

@@ -6,7 +6,7 @@ using System.Net;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace Allegiance.CommunitySecuritySystem.IPConvergeTestClient
+namespace ACSSAuth.IPConvergeTestClient
 {
 	class Program
 	{

@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Linq.SqlClient;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Squads
+namespace ACSSAuth.Management.Squads
 {
 	public partial class AddAlias : UI.Page
 	{

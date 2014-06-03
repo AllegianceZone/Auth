@@ -1,11 +1,11 @@
 ﻿using System.Runtime.Serialization;
-using Allegiance.CommunitySecuritySystem.BlackboxGenerator;
+using ACSSAuth.BlackboxGenerator;
 using System.Configuration;
 using System;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Contracts
+namespace ACSSAuth.Server.Contracts
 {
     [DataContract]
     public class LoginData : AuthenticatedData

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestSettings name="Allegiance.CommunitySecuritySystem" id="1e9635d3-f814-4544-b874-205c0b1b580f" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<TestSettings name="ACSSAuth" id="1e9635d3-f814-4544-b874-205c0b1b580f" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>These are default test settings for a local test run.</Description>
   <Execution>
     <TestTypeSpecific>
@@ -25,7 +25,7 @@
           <Configuration>
             <CodeCoverage xmlns="">
               <Regular>
-                <CodeCoverageItem binaryFile="Tasks\TransformMethodGenerator\bin\Debug\Allegiance.CommunitySecuritySystem.TransformMethodGenerator.dll" pdbFile="Tasks\TransformMethodGenerator\bin\Debug\Allegiance.CommunitySecuritySystem.TransformMethodGenerator.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Tasks\TransformMethodGenerator\bin\Debug\ACSSAuth.TransformMethodGenerator.dll" pdbFile="Tasks\TransformMethodGenerator\bin\Debug\ACSSAuth.TransformMethodGenerator.pdb" instrumentInPlace="true" />
               </Regular>
             </CodeCoverage>
           </Configuration>

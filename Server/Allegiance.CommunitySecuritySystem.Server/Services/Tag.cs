@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Allegiance.CommunitySecuritySystem.Server.Interfaces;
+using ACSSAuth.Server.Interfaces;
 using System.ServiceModel.Activation;
 using System.IO;
 using System.Xml;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
-using Allegiance.CommunitySecuritySystem.Server.Properties;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.Server.Utilities;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.DataAccess;
+using ACSSAuth.Server.Utilities;
+using ACSSAuth.Server.Properties;
 
-namespace Allegiance.CommunitySecuritySystem.Server
+namespace ACSSAuth.Server
 {
 	[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 	public partial class Tag : ITag
@@ -140,7 +140,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 		private int SaveGame(DataAccess.CSSDataContext db, DataAccess.CSSStatsDataContext statsDB, DataAccess.GameServer gameServer, Data.GameDataset.GameRow gameRow)
 		{
-			DataAccess.Game game = new Allegiance.CommunitySecuritySystem.DataAccess.Game()
+			DataAccess.Game game = new ACSSAuth.DataAccess.Game()
 			{
 				GameDefections = gameRow.AllowDefections,
 				GameDevelopments = gameRow.AllowDevelopments,
@@ -221,11 +221,11 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 
 
-		private void SaveChatLog(Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext db, DataAccess.CSSStatsDataContext statsDB, Allegiance.CommunitySecuritySystem.Server.Data.GameDataset.GameRow gameRow, int gameIdentID)
+		private void SaveChatLog(ACSSAuth.DataAccess.CSSDataContext db, DataAccess.CSSStatsDataContext statsDB, ACSSAuth.Server.Data.GameDataset.GameRow gameRow, int gameIdentID)
 		{
 			foreach (Data.GameDataset.ChatLogRow chatLogRow in gameRow.GetChatLogRows())
 			{
-				DataAccess.GameChatLog chatLog = new Allegiance.CommunitySecuritySystem.DataAccess.GameChatLog()
+				DataAccess.GameChatLog chatLog = new ACSSAuth.DataAccess.GameChatLog()
 				{
 					GameChatSpeakerName = TrimString(DataAccess.Alias.GetCallsignFromStringWithTokensAndTags(db, chatLogRow.SpeakerName), 49),
 					GameChatTargetName = TrimString(DataAccess.Alias.GetCallsignFromStringWithTokensAndTags(db, chatLogRow.TargetName), 49),
@@ -238,7 +238,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 			}
 		}
 
-		private void SaveTeams(Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext db, DataAccess.CSSStatsDataContext statsDB, Allegiance.CommunitySecuritySystem.Server.Data.GameDataset.GameRow gameRow, int gameIdentID)
+		private void SaveTeams(ACSSAuth.DataAccess.CSSDataContext db, DataAccess.CSSStatsDataContext statsDB, ACSSAuth.Server.Data.GameDataset.GameRow gameRow, int gameIdentID)
 		{
 			foreach (Data.GameDataset.TeamRow teamRow in gameRow.GetTeamRows())
 			{
@@ -248,7 +248,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 				if (commanderAlias != null)
 					commanderLoginID = commanderAlias.Login.Id;
 
-				DataAccess.GameTeam team = new Allegiance.CommunitySecuritySystem.DataAccess.GameTeam()
+				DataAccess.GameTeam team = new ACSSAuth.DataAccess.GameTeam()
 				{
 					GameID = gameIdentID,
 					GameTeamCommander = TrimString(teamRow.Commander, 49),
@@ -275,7 +275,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 					if (teamMemberAlias != null)
 						loginID = teamMemberAlias.Login.Id;
 
-					DataAccess.GameTeamMember teamMember = new Allegiance.CommunitySecuritySystem.DataAccess.GameTeamMember()
+					DataAccess.GameTeamMember teamMember = new ACSSAuth.DataAccess.GameTeamMember()
 					{
 						GameTeamID = team.GameTeamIdentID,
 						GameTeamMemberCallsign = TrimString(DataAccess.Alias.GetCallsignFromStringWithTokensAndTags(db, teamMemberRow.Callsign), 49),
@@ -290,7 +290,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 			}
 		}
 
-		private void SaveGameEvents(Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext db, DataAccess.CSSStatsDataContext statsDB, Allegiance.CommunitySecuritySystem.Server.Data.GameDataset.GameRow gameRow, int gameIdentID)
+		private void SaveGameEvents(ACSSAuth.DataAccess.CSSDataContext db, DataAccess.CSSStatsDataContext statsDB, ACSSAuth.Server.Data.GameDataset.GameRow gameRow, int gameIdentID)
 		{
 			foreach (Data.GameDataset.GameEventRow gameEventRow in gameRow.GetGameEventRows())
 			{
@@ -417,9 +417,9 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 		private void UpdateLeaderboard(int gameIdentID)
 		{
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
-				using (DataAccess.CSSStatsDataContext statsDB = new Allegiance.CommunitySecuritySystem.DataAccess.CSSStatsDataContext())
+				using (DataAccess.CSSStatsDataContext statsDB = new ACSSAuth.DataAccess.CSSStatsDataContext())
 				{
 					var game = statsDB.Games.FirstOrDefault(p => p.GameIdentID == gameIdentID);
 
@@ -536,7 +536,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 								if (leaderboard == null)
 								{
-									leaderboard = new Allegiance.CommunitySecuritySystem.DataAccess.StatsLeaderboard()
+									leaderboard = new ACSSAuth.DataAccess.StatsLeaderboard()
 									{
 										CommandDraws = 0, // Value filled in by ASGSServiceUpdateASRankings stored proc during AllegSkill calculation.
 										CommandLosses = 0, // Value filled in by ASGSServiceUpdateASRankings stored proc during AllegSkill calculation.
@@ -625,7 +625,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 		private void UpdateFactionStats(int gameIdentID)
 		{
-			using (DataAccess.CSSStatsDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSStatsDataContext())
+			using (DataAccess.CSSStatsDataContext db = new ACSSAuth.DataAccess.CSSStatsDataContext())
 			{
 				var game = db.Games.FirstOrDefault(p => p.GameIdentID == gameIdentID);
 
@@ -672,7 +672,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 				if(statsFaction == null)
 				{
-					statsFaction = new Allegiance.CommunitySecuritySystem.DataAccess.StatsFaction()
+					statsFaction = new ACSSAuth.DataAccess.StatsFaction()
 					{
 						GamesPlayed = 1,
 						HoursPlayed = game.GameEndTime.Subtract(game.GameStartTime).TotalMinutes / 60,
@@ -707,7 +707,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 		private void UpdateMetrics(int gameIdentID)
 		{
-			using (DataAccess.CSSStatsDataContext statsDB = new Allegiance.CommunitySecuritySystem.DataAccess.CSSStatsDataContext())
+			using (DataAccess.CSSStatsDataContext statsDB = new ACSSAuth.DataAccess.CSSStatsDataContext())
 			{
 				var game = statsDB.Games.FirstOrDefault(p => p.GameIdentID == gameIdentID);
 
@@ -740,7 +740,7 @@ namespace Allegiance.CommunitySecuritySystem.Server
 
 				if (statsMetric == null)
 				{
-					statsMetric = new Allegiance.CommunitySecuritySystem.DataAccess.StatsMetric()
+					statsMetric = new ACSSAuth.DataAccess.StatsMetric()
 					{
 						AverageCommandRank = averageCommandRank,
 						AveragePlayerRank = averageRank,

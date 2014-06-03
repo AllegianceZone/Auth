@@ -1,4 +1,4 @@
-﻿namespace Allegiance.CommunitySecuritySystem.Client
+﻿namespace ACSSAuth.Client
 {
     partial class MainForm
     {
@@ -60,9 +60,9 @@
 			this._playTabPage = new System.Windows.Forms.TabPage();
 			this.label1 = new System.Windows.Forms.Label();
 			this._messagesTabPage = new System.Windows.Forms.TabPage();
-			this._messageListControl = new Allegiance.CommunitySecuritySystem.Client.Controls.MessageListControl();
+			this._messageListControl = new ACSSAuth.Client.Controls.MessageListControl();
 			this._callsignsTabPage = new System.Windows.Forms.TabPage();
-			this._callsignControl = new Allegiance.CommunitySecuritySystem.Client.Controls.CallsignControl();
+			this._callsignControl = new ACSSAuth.Client.Controls.CallsignControl();
 			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
 			this._notificationIcon = new System.Windows.Forms.NotifyIcon(this.components);
 			this._notificationMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -466,8 +466,8 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ToolStripMenuItem _autoLoginToolStripMenuItem;
         //private PlayControl _playControl;
-        private Allegiance.CommunitySecuritySystem.Client.Controls.MessageListControl _messageListControl;
-        private Allegiance.CommunitySecuritySystem.Client.Controls.CallsignControl _callsignControl;
+        private ACSSAuth.Client.Controls.MessageListControl _messageListControl;
+        private ACSSAuth.Client.Controls.CallsignControl _callsignControl;
         private System.Windows.Forms.ToolStripStatusLabel _mainToolStripStatusLabel;
         private System.Windows.Forms.ToolStripProgressBar _mainToolStripProgressBar;
         private System.Windows.Forms.NotifyIcon _notificationIcon;

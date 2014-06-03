@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.UI.MasterPages
+namespace ACSSAuth.Management.UI.MasterPages
 {
 	public partial class NoChrome : Default
 	{

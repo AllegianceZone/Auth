@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Enforcer.Search" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="ACSSAuth.Management.Enforcer.Search" %>
 <%@ Register src="UI/UserControls/Ban.ascx" tagname="Ban" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

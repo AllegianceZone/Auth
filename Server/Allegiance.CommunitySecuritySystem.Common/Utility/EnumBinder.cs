@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections.Specialized;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
+using ACSSAuth.Common.Envelopes.AuthInfo;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Utility
+namespace ACSSAuth.Common.Utility
 {
 	public class EnumBinder
 	{

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="EditPackage.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate.EditPackage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="EditPackage.aspx.cs" Inherits="ACSSAuth.Management.Content.AutoUpdate.EditPackage" %>
 
 <%@ Register src="UI/UserControls/PackageContents.ascx" tagname="PackageContents" tagprefix="uc1" %>
 

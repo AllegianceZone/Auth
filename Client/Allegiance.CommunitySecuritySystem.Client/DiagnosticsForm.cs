@@ -11,9 +11,9 @@ using System.Management.Instrumentation;
 using System.Threading;
 using System.IO;
 using System.Diagnostics;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
     public partial class DiagnosticsForm : Form
     {

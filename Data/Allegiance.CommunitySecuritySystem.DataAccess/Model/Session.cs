@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Configuration;
-using Allegiance.CommunitySecuritySystem.Common.Extensions;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.Common.Extensions;
+using ACSSAuth.Common.Utility;
+using ACSSAuth.DataAccess.Enumerations;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Session
     {

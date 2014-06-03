@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Stats
+namespace ACSSAuth.Management.Stats
 {
 	public partial class LeaderboardData : System.Web.UI.Page
 	{
@@ -16,7 +16,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Stats
 
 		protected override void Render(HtmlTextWriter writer)
 		{
-			using (DataAccess.CSSStatsDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSStatsDataContext())
+			using (DataAccess.CSSStatsDataContext db = new ACSSAuth.DataAccess.CSSStatsDataContext())
 			{
 				var sortedLeaderboard = db.StatsLeaderboards.Where(p => p.DateModified > DateTime.Now.AddDays(-7)).OrderBy(p => p.Rank).ToList().Select((p, index) => new {
 					Order = index, 

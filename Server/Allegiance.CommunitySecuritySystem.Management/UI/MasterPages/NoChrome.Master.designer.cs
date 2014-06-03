@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.UI.MasterPages {
+namespace ACSSAuth.Management.UI.MasterPages {
     
     
     public partial class NoChrome {

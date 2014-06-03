@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" EnableEventValidation="true" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="EditPoll.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.Polls.EditPoll" %>
+﻿<%@ Page Title="" EnableEventValidation="true" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" AutoEventWireup="true" CodeBehind="EditPoll.aspx.cs" Inherits="ACSSAuth.Management.Content.Polls.EditPoll" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -50,7 +50,7 @@
 		<input id="btnAddPollOption" type="button" value="Add Poll Option" onclick="editPollOption(0, '')" />
 		<asp:Button ID="btnRecalculatePoll" runat="server" 
 			Text="Recalculate Poll Results" onclick="btnRecalculatePoll_Click" />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Poll Recalculation: <%= Allegiance.CommunitySecuritySystem.Management.Format.DateTime(Poll.LastRecalculation)%>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Poll Recalculation: <%= ACSSAuth.Management.Format.DateTime(Poll.LastRecalculation)%>
 		<hr />
 
 		<asp:GridView ID="gvPollOptions" runat="server" AutoGenerateColumns="False" 

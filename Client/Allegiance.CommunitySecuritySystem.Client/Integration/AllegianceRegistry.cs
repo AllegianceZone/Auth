@@ -2,11 +2,11 @@
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
 using System;
-using Allegiance.CommunitySecuritySystem.Client.Properties;
+using ACSSAuth.Client.Properties;
 using System.Configuration;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Integration
+namespace ACSSAuth.Client.Integration
 {
     static class AllegianceRegistry
     {

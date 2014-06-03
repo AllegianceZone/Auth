@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Configuration;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Utility;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
     public partial class Error
     {

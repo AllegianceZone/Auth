@@ -6,7 +6,7 @@ using System.Security;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.Blackbox
+namespace ACSSAuth.Blackbox
 {
     public class Validator
     {

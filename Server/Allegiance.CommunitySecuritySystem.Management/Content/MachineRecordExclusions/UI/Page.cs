@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.MachineRecordExclusions.UI
+namespace ACSSAuth.Management.Content.MachineRecordExclusions.UI
 {
 	public class Page : Content.UI.Page
 	{

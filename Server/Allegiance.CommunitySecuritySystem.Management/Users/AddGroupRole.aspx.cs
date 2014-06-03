@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Security;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users
+namespace ACSSAuth.Management.Users
 {
 	public partial class AddGroupRole : UI.Page
 	{
@@ -60,7 +60,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 					return;
 				}
 
-				DataAccess.Group_Alias_GroupRole newGroupRole = new Allegiance.CommunitySecuritySystem.DataAccess.Group_Alias_GroupRole()
+				DataAccess.Group_Alias_GroupRole newGroupRole = new ACSSAuth.DataAccess.Group_Alias_GroupRole()
 				{
 					AliasId = AliasID,
 					GroupId = groupID,

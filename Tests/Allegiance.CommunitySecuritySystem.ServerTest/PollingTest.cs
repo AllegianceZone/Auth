@@ -2,17 +2,17 @@
 using System.Linq;
 using System.Text;
 using System.Collections.Generic;
-using Allegiance.CommunitySecuritySystem.BlackboxGenerator;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
-using Allegiance.CommunitySecuritySystem.Server;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+using ACSSAuth.BlackboxGenerator;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.DataAccess;
+using ACSSAuth.DataAccess.Enumerations;
+using ACSSAuth.Server;
+using ACSSAuth.Server.Contracts;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Allegiance.CommunitySecuritySystem.DataAccess.Model;
+using ACSSAuth.DataAccess.Model;
 
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest
+namespace ACSSAuth.ServerTest
 {
     /// <summary>
     /// Summary description for PollingTest

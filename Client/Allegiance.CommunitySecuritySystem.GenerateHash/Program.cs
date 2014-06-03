@@ -5,7 +5,7 @@ using System.Text;
 using System.Security.Cryptography;
 using System.IO;
 
-namespace Allegiance.CommunitySecuritySystem.GenerateHash
+namespace ACSSAuth.GenerateHash
 {
     class Program
     {

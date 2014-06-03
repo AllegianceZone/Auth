@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Integration;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Utility;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
+using ACSSAuth.Client.ClientService;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
     public partial class PlayControl : UserControl
     {

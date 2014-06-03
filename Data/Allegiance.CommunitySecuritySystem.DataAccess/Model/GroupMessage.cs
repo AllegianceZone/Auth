@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
-using Allegiance.CommunitySecuritySystem.DataAccess.Model;
+using ACSSAuth.DataAccess.Model;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
 	public partial class GroupMessage : IMessage
     {

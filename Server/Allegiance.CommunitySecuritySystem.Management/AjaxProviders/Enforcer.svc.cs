@@ -4,11 +4,11 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Web;
 using System.Security.Principal;
 
-namespace Allegiance.CommunitySecuritySystem.Management.AjaxProviders
+namespace ACSSAuth.Management.AjaxProviders
 {
 
 	[DataContract()]

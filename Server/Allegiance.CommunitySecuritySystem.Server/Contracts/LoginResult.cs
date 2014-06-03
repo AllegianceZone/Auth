@@ -1,7 +1,7 @@
 ﻿using System.Runtime.Serialization;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
+using ACSSAuth.Common.Enumerations;
 
-namespace Allegiance.CommunitySecuritySystem.Server.Contracts
+namespace ACSSAuth.Server.Contracts
 {
     [DataContract]
     public class LoginResult

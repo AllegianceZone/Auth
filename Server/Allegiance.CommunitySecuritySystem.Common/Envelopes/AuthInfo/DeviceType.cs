@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo
+namespace ACSSAuth.Common.Envelopes.AuthInfo
 {
     public enum DeviceType
     {

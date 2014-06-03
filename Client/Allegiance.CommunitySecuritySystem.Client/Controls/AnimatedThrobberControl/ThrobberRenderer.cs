@@ -4,7 +4,7 @@ using System.Drawing.Drawing2D;
 
 // From a sample at: http://dev.nomad-net.info/articles/animatedthrobber
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls.AnimatedThrobberControl
+namespace ACSSAuth.Client.Controls.AnimatedThrobberControl
 {
   public enum ThrobberStyle
   {

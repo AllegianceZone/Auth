@@ -6,11 +6,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.CSharp;
 using System.CodeDom.Compiler;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.TransformMethodGenerator;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.TransformMethodGenerator;
+using ACSSAuth.DataAccess;
 using System.Diagnostics;
 
-namespace Allegiance.CommunitySecuritySystem.TransformMethodGeneratorTest
+namespace ACSSAuth.TransformMethodGeneratorTest
 {
 	/// <summary>
 	/// Summary description for UnitTest1
@@ -90,7 +90,7 @@ namespace Allegiance.CommunitySecuritySystem.TransformMethodGeneratorTest
 				db.TransformMethods.DeleteAllOnSubmit(db.TransformMethods);
 				db.SubmitChanges();
 
-				Allegiance.CommunitySecuritySystem.TransformMethodGenerator.Task.Execute(10, 10);
+				ACSSAuth.TransformMethodGenerator.Task.Execute(10, 10);
 
 				Assert.AreEqual(10, db.TransformMethods.Count());
 			}
@@ -103,7 +103,7 @@ namespace Allegiance.CommunitySecuritySystem.TransformMethodGeneratorTest
 
 			for (int i = 0; i < 10; i++)
 			{
-				string output = Allegiance.CommunitySecuritySystem.TransformMethodGenerator.Task.GenerateCode(10);
+				string output = ACSSAuth.TransformMethodGenerator.Task.GenerateCode(10);
 				//Console.Write(output);
 
 				string dynamicResults = CompileAndInvoke(output);

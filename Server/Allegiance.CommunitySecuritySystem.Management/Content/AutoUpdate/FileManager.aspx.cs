@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
-using Allegiance.CommunitySecuritySystem.Management.Business;
+using ACSSAuth.Management.Business;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.AutoUpdate
+namespace ACSSAuth.Management.Content.AutoUpdate
 {
 	public partial class FileManager : UI.Page
 	{

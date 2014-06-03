@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users.UI.UserControls
+namespace ACSSAuth.Management.Users.UI.UserControls
 {
 	public partial class AliasDetail : System.Web.UI.UserControl, ITemplate
 	{
@@ -185,13 +185,13 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users.UI.UserControls
 				HiddenField txtGroupID = (HiddenField)e.Row.FindControl("txtGroupID");
 				HiddenField txtAliasID = (HiddenField)e.Row.FindControl("txtAliasID");
 
-				List<Data.EditableRole> allRoles = new List<Allegiance.CommunitySecuritySystem.Management.Users.Data.EditableRole>();
+				List<Data.EditableRole> allRoles = new List<ACSSAuth.Management.Users.Data.EditableRole>();
 
 				using (var db = new DataAccess.CSSDataContext())
 				{
 					foreach (var currentGroupRole in db.GroupRoles)
 					{
-						allRoles.Add(new Allegiance.CommunitySecuritySystem.Management.Users.Data.EditableRole()
+						allRoles.Add(new ACSSAuth.Management.Users.Data.EditableRole()
 						{
 							Id = currentGroupRole.Id,
 							Name = currentGroupRole.Name
@@ -225,7 +225,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users.UI.UserControls
 					return;
 				}
 
-				DataAccess.Group_Alias_GroupRole newGroupRole = new Allegiance.CommunitySecuritySystem.DataAccess.Group_Alias_GroupRole()
+				DataAccess.Group_Alias_GroupRole newGroupRole = new ACSSAuth.DataAccess.Group_Alias_GroupRole()
 				{
 					AliasId = AliasID,
 					GroupId = groupID,

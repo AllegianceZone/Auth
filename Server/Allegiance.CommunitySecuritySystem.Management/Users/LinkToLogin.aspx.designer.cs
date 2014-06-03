@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users {
+namespace ACSSAuth.Management.Users {
     
     
     public partial class LinkToLogin {

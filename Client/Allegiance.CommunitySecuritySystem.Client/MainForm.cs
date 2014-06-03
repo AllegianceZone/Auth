@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Controls;
-using Allegiance.CommunitySecuritySystem.Client.Service;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
+using ACSSAuth.Client.Controls;
+using ACSSAuth.Client.Service;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.Integration;
+using ACSSAuth.Client.ClientService;
 
-namespace Allegiance.CommunitySecuritySystem.Client
+namespace ACSSAuth.Client
 {
     public partial class MainForm : Form
     {
@@ -419,7 +419,7 @@ namespace Allegiance.CommunitySecuritySystem.Client
 
         void _pollDisplayControl_PollComplete(object sender, EventArgs e)
         {
-            this.PresentPoll(Allegiance.CommunitySecuritySystem.Client.Service.Poll.CurrentPolls);
+            this.PresentPoll(ACSSAuth.Client.Service.Poll.CurrentPolls);
         }
 
         #endregion
@@ -496,7 +496,7 @@ namespace Allegiance.CommunitySecuritySystem.Client
                 }
             });
 
-            Allegiance.CommunitySecuritySystem.Client.Service.Poll.RetrievePolls(delegate(object data)
+            ACSSAuth.Client.Service.Poll.RetrievePolls(delegate(object data)
             {
                 if (InvokeRequired)
                     Invoke(signal, data);

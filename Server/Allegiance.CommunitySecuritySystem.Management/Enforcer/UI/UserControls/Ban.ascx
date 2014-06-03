@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Ban.ascx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls.Ban" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Ban.ascx.cs" Inherits="ACSSAuth.Management.Enforcer.UI.UserControls.Ban" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
 <asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server" >

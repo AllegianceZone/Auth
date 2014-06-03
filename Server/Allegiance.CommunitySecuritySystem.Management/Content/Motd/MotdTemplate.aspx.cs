@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.Motd
+namespace ACSSAuth.Management.Content.Motd
 {
 	
 	public partial class MotdTemplate : System.Web.UI.Page
@@ -25,7 +25,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Content.Motd
 		{
 			int lobbyID = Int32.Parse(Request.Params["lobbyID"]);
 
-			using(DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using(DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var motd = db.Motds.FirstOrDefault(p => p.LobbyId == lobbyID);
 

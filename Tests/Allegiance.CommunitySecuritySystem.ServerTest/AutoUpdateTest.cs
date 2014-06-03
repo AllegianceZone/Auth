@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.Server;
+using ACSSAuth.DataAccess;
+using ACSSAuth.Server;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest
+namespace ACSSAuth.ServerTest
 {
     /// <summary>
     /// Summary description for AutoUpdateTest

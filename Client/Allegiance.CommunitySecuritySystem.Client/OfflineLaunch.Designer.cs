@@ -1,4 +1,4 @@
-﻿namespace Allegiance.CommunitySecuritySystem.Client
+﻿namespace ACSSAuth.Client
 {
 	partial class OfflineLaunch
 	{

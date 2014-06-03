@@ -3,7 +3,7 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Xml;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo
+namespace ACSSAuth.Common.Envelopes.AuthInfo
 {
     public class MachineInformation : IXmlSerializable
     {

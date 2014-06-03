@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Collections.Specialized;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	// Uses a sample provided by: http://www.csharper.net/blog/sitemapprovider_doesn_t_take_querystring_into_consideration.aspx#custom_sitemapprovider_incorporates_querystring_reliance.aspx
 	public class SmartSiteMapProvider : XmlSiteMapProvider

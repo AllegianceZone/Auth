@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls.Custom
+namespace ACSSAuth.Client.Controls.Custom
 {
         public class RadioListBox : ListBox
         {

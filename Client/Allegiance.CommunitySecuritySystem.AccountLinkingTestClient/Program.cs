@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.Common.Envelopes.AuthInfo;
+using ACSSAuth.DataAccess;
 
 namespace AccountLinkingTestClient
 {

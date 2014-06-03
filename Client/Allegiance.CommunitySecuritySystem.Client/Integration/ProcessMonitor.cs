@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Diagnostics;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Utility;
 using System.Runtime.InteropServices;
 using Microsoft.Win32.SafeHandles;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Integration
+namespace ACSSAuth.Client.Integration
 {
 	/// <summary>
 	/// Monitors a process handler for that handlers process to close. If the process closes

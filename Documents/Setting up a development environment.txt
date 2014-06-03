@@ -23,7 +23,7 @@ Requirements:
 
 3. Prepare the Database.
    3a. Open the Server Explorer view in Visual Studio. You should already see a connection to the database there. Make sure it is working (if not, you probably made some mistake in step 1) by trying to access some data (the Tables list should still be empty).
-   3b. Switch back to the Solution Explorer and open the project Allegiance.CommunitySecuritySystem.Database.
+   3b. Switch back to the Solution Explorer and open the project ACSSAuth.Database.
    3c. Run the highest versioned script you can find in the Create Scripts folder.
    3d. Then run all scripts in the Change Scripts folder which are higher versioned than the used create script, in the correct order.
 
@@ -47,12 +47,12 @@ Requirements:
 
 5. Building the Main Projects.
    5a. Open the solution in Visual Studio. It will not build without errors at this point.
-   5b. Build the project Allegiance.CommunitySecuritySystem.Server. This should also automatically deploy it. Confirm that CSSServer now appears as a virtual directory under the Default Web Site in Computer Management.
+   5b. Build the project ACSSAuth.Server. This should also automatically deploy it. Confirm that CSSServer now appears as a virtual directory under the Default Web Site in Computer Management.
    5c. Confirm that it is running on IIS by accessing http://localhost/CSSServer. You should get a "Directory Listing Denied" or "Forbidden" page from IIS (because directory listening is not enabled), but *not* an error message from your browser. You should also be able to get to this error page over HTTPS.
    5d. Now try accessing http://localhost/CSSServer/ClientService.svc. You should see some template information about the service. That means it's running. You should also be able to get this over HTTPS.
-   5e. Open the project Allegiance.CommunitySecuritySystem.Client and look under Web References. You should see a reference called 'localhost'. Right-click it and select Update Web Reference. You should get warnings now, because the server is using a self-signed certificate. Accept them and the web reference should successfully update.
+   5e. Open the project ACSSAuth.Client and look under Web References. You should see a reference called 'localhost'. Right-click it and select Update Web Reference. You should get warnings now, because the server is using a self-signed certificate. Accept them and the web reference should successfully update.
    5f. Do the same in the project PrototypeClient.
-   5g. The client will still not compile at this point. From the repository, under Documents/Templates/, take the file Allegiance.CommunitySecuritySystem.Client.config and copy it into the Client project as "app.config". Open it and replace the placeholder {ComputerName} with your computer name or just "localhost". This file should not be committed into the repository (but it is on svn:ignore anyway, so you can't easily).
+   5g. The client will still not compile at this point. From the repository, under Documents/Templates/, take the file ACSSAuth.Client.config and copy it into the Client project as "app.config". Open it and replace the placeholder {ComputerName} with your computer name or just "localhost". This file should not be committed into the repository (but it is on svn:ignore anyway, so you can't easily).
    5h. Now the server should build deploy and the client should build, too. Right-click the solution and select Properties. Under 'Startup Project', select 'Multiple startup projects' and select the Action 'start' for the projects Client and Server.
    5i. Run it.
 
@@ -65,7 +65,7 @@ Requirements:
 		
 		** TODO: Make this part of the web.config so that manual config on IIS is not necessary. (see <handlers> element under system.webServer)
 		For IIS 7(Vista/7): Click on Handler Mappings in main pane, click on "Add Managed Handler" in right pane,
-			under request path type: *, under Type, select Allegiance.CommunitySecuritySystem.AutoUpdate.AutoUpdateHandler, under Name type 'AutoUpdateHandler', click OK. If it complains, then it probably means the binding is configured correctly already in your web.config
+			under request path type: *, under Type, select ACSSAuth.AutoUpdate.AutoUpdateHandler, under Name type 'AutoUpdateHandler', click OK. If it complains, then it probably means the binding is configured correctly already in your web.config
 
 7. Building the Other Projects.
    7a. [MISSING] how to really build Server (app.config needed?)

@@ -5,11 +5,11 @@ using System.Net.Security;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
+using ACSSAuth.Client.Utility;
+using ACSSAuth.Client.Integration;
+using ACSSAuth.Client.ClientService;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Service
+namespace ACSSAuth.Client.Service
 {
     internal class ServiceHandler
     {

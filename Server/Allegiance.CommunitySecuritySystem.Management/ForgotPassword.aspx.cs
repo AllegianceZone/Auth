@@ -5,14 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net;
-using Allegiance.CommunitySecuritySystem.Management.Properties;
-using Allegiance.CommunitySecuritySystem.Management.Business;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Management.Properties;
+using ACSSAuth.Management.Business;
+using ACSSAuth.Common.Utility;
 using System.Text.RegularExpressions;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.Net.Mail;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	public partial class ForgotPassword : UI.Page
 	{

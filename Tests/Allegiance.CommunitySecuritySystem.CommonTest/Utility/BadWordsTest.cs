@@ -3,9 +3,9 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
+using ACSSAuth.Common.Utility;
 
-namespace Allegiance.CommunitySecuritySystem.CommonTest.Utility
+namespace ACSSAuth.CommonTest.Utility
 {
 	[TestClass]
 	public class BadWordsTest

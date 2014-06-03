@@ -3,9 +3,9 @@ using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Web;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 
-namespace Allegiance.CommunitySecuritySystem.AutoUpdate
+namespace ACSSAuth.AutoUpdate
 {
     public class FileRequestHandler
     {

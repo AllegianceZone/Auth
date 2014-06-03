@@ -5,12 +5,12 @@ using System.IO;
 using System.Net;
 using System.Security.Cryptography;
 using System.Windows.Forms;
-using Allegiance.CommunitySecuritySystem.Client.Integration;
-using Allegiance.CommunitySecuritySystem.Client.ClientService;
-using Allegiance.CommunitySecuritySystem.Client.Utility;
+using ACSSAuth.Client.Integration;
+using ACSSAuth.Client.ClientService;
+using ACSSAuth.Client.Utility;
 using System.Threading;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Service
+namespace ACSSAuth.Client.Service
 {
     static class AutoUpdate
     {

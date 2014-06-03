@@ -4,14 +4,14 @@ using System.IO;
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
-using Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
-using Allegiance.CommunitySecuritySystem.DataAccess;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
-using Allegiance.CommunitySecuritySystem.DataAccess.MembershipProviders;
+using ACSSAuth.Common.Enumerations;
+using ACSSAuth.Common.Envelopes.AuthInfo;
+using ACSSAuth.Common.Utility;
+using ACSSAuth.DataAccess;
+using ACSSAuth.DataAccess.Enumerations;
+using ACSSAuth.DataAccess.MembershipProviders;
 
-namespace Allegiance.CommunitySecuritySystem.BlackboxGenerator
+namespace ACSSAuth.BlackboxGenerator
 {
     public static class Validation
     {

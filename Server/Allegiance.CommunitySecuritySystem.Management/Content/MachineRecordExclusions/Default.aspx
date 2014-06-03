@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" MaintainScrollPositionOnPostback="true" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Allegiance.CommunitySecuritySystem.Management.Content.MachineRecordExclusions.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MasterPages/Default.Master" MaintainScrollPositionOnPostback="true" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ACSSAuth.Management.Content.MachineRecordExclusions.Default" %>
 
 <%@ Register Assembly="System.Web.Entity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
 	Namespace="System.Web.UI.WebControls" TagPrefix="asp" %>
@@ -76,7 +76,7 @@
 		 onclick="btnSaveNewMachineRecordExclusion_Click" />
 	
 	<asp:LinqDataSource ID="ldsMachineRecordExclusions" runat="server" 
-		ContextTypeName="Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext"
+		ContextTypeName="ACSSAuth.DataAccess.CSSDataContext"
 		TableName="MachineRecordExclusions"
 		EnableUpdate="True"
 		EnableInsert="True"
@@ -87,15 +87,15 @@
 <%-- how to bind to an enumeration instead of a data table with a reuseable utility.	
 	<asp:ObjectDataSource ID="odsDeviceType" runat="server" 
 		SelectMethod="GetAllValues" 
-		TypeName="Allegiance.CommunitySecuritySystem.Common.Utility.EnumBinder">
+		TypeName="ACSSAuth.Common.Utility.EnumBinder">
 		<SelectParameters>
-			<asp:Parameter DefaultValue="Allegiance.CommunitySecuritySystem.Common.Envelopes.AuthInfo.DeviceType" Name="enumTypeToBind" Type="String" />
+			<asp:Parameter DefaultValue="ACSSAuth.Common.Envelopes.AuthInfo.DeviceType" Name="enumTypeToBind" Type="String" />
 		</SelectParameters>
 	</asp:ObjectDataSource>--%>
 	
 
 	<asp:LinqDataSource ID="ldsMachineRecordTypes" runat="server" 
-		ContextTypeName="Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext" 
+		ContextTypeName="ACSSAuth.DataAccess.CSSDataContext" 
 		Select="new (Id, Name)" TableName="MachineRecordTypes">
 	</asp:LinqDataSource>
 	

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Security.Principal;
-using Allegiance.CommunitySecuritySystem.Common.Enumerations;
+using ACSSAuth.Common.Enumerations;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Business
+namespace ACSSAuth.Management.Business
 {
 	public class Authorization
 	{

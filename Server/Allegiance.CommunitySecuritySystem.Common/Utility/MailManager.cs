@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Mail;
 
-namespace Allegiance.CommunitySecuritySystem.Common.Utility
+namespace ACSSAuth.Common.Utility
 {
     public static class MailManager
     {

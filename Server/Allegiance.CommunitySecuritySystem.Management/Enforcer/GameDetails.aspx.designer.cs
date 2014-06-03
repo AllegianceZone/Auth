@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer {
+namespace ACSSAuth.Management.Enforcer {
     
     
     public partial class GameDetails {

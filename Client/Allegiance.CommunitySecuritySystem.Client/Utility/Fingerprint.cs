@@ -4,7 +4,7 @@ using System.Management;
 using System.Text;
 using Microsoft.Win32;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
     internal static class Fingerprint
     {

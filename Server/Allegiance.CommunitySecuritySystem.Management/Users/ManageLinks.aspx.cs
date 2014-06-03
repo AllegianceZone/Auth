@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users
+namespace ACSSAuth.Management.Users
 {
 	public partial class ManageLinks : UI.Page
 	{
@@ -27,7 +27,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 
 		private void BindData()
 		{
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var primaryLogin = db.Logins.FirstOrDefault(p => p.Id == PrimaryLoginID);
 
@@ -67,7 +67,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 
 		private void MergeLogins(int primaryLoginID, int mergeLoginID)
 		{
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var principalLogin = db.Logins.FirstOrDefault(p => p.Id == primaryLoginID);
 				var loginToMerge = db.Logins.FirstOrDefault(p => p.Id == mergeLoginID);
@@ -78,7 +78,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 
 		private void UnlinkLogins(int primaryLoginID, int unlinkLoginID)
 		{
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var principal = db.Logins.FirstOrDefault(p => p.Id == primaryLoginID).Identity;
 				var loginToUnlink = db.Logins.FirstOrDefault(p => p.Id == unlinkLoginID);
@@ -115,9 +115,9 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 
 			UnlinkLogins(PrimaryLoginID, unlinkLoginID);
 
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
-				DataAccess.Login_UnlinkedLogin unlinkRecord = new Allegiance.CommunitySecuritySystem.DataAccess.Login_UnlinkedLogin()
+				DataAccess.Login_UnlinkedLogin unlinkRecord = new ACSSAuth.DataAccess.Login_UnlinkedLogin()
 				{
 					LoginId1 = PrimaryLoginID,
 					LoginId2 = unlinkLoginID
@@ -140,7 +140,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 		{
 			int loginID = Int32.Parse(e.CommandArgument.ToString());
 
-			using (DataAccess.CSSDataContext db = new Allegiance.CommunitySecuritySystem.DataAccess.CSSDataContext())
+			using (DataAccess.CSSDataContext db = new ACSSAuth.DataAccess.CSSDataContext())
 			{
 				var permanentUnlink = db.Login_UnlinkedLogins
 					.FirstOrDefault(p => (p.LoginId1 == PrimaryLoginID && p.LoginId2 == loginID) || (p.LoginId1 == loginID && p.LoginId2 == PrimaryLoginID));

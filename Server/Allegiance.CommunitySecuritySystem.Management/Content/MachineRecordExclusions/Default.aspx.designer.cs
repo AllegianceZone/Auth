@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.MachineRecordExclusions {
+namespace ACSSAuth.Management.Content.MachineRecordExclusions {
     
     
     public partial class Default {

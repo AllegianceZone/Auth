@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Users
+namespace ACSSAuth.Management.Users
 {
 	public partial class EditUser : UI.Page
 	{
@@ -94,7 +94,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 						UI.UserControls.AliasDetail aliasDetail = (UI.UserControls.AliasDetail) LoadControl("~/Users/UI/UserControls/AliasDetail.ascx");
 						aliasDetail.AliasID = alias.Id;
 						aliasDetail.LoginID = LoginID;
-						aliasDetail.OnRequiresDataBind += new Allegiance.CommunitySecuritySystem.Management.Users.UI.UserControls.AliasDetail.OnRequiresDataBindDelegate(aliasDetail_OnRequiresDataBind);
+						aliasDetail.OnRequiresDataBind += new ACSSAuth.Management.Users.UI.UserControls.AliasDetail.OnRequiresDataBindDelegate(aliasDetail_OnRequiresDataBind);
 
 						//aliasDetail.BindData();
 
@@ -148,7 +148,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Users
 						if (assignedRole.Assigned == true)
 							db.Login_Roles.DeleteOnSubmit(assignedRole.Login_Role);
 						else
-							db.Login_Roles.InsertOnSubmit(new Allegiance.CommunitySecuritySystem.DataAccess.Login_Role()
+							db.Login_Roles.InsertOnSubmit(new ACSSAuth.DataAccess.Login_Role()
 							{
 								LoginId = LoginID,
 								RoleId = assignedRole.Id

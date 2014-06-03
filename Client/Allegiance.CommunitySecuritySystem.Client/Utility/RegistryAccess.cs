@@ -6,7 +6,7 @@ using System.Security.Principal;
 using System.Diagnostics;
 using Microsoft.Win32;
 
-namespace Allegiance.CommunitySecuritySystem.Client.Utility
+namespace ACSSAuth.Client.Utility
 {
 	// http://msdn.microsoft.com/en-us/library/system.security.accesscontrol.registrysecurity.aspx
 	public static class RegistryAccess

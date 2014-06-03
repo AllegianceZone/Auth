@@ -5,13 +5,13 @@ using System.Web;
 using System.Web.Security;
 using System.Linq.Expressions;
 using System.Data.Linq.SqlClient;
-using Allegiance.CommunitySecuritySystem.DataAccess.Enumerations;
+using ACSSAuth.DataAccess.Enumerations;
 using System.Net.Mail;
-using Allegiance.CommunitySecuritySystem.Common.Utility;
-using Allegiance.CommunitySecuritySystem.DataAccess.IPConvergeProvider;
-using Allegiance.CommunitySecuritySystem.DataAccess.Properties;
+using ACSSAuth.Common.Utility;
+using ACSSAuth.DataAccess.IPConvergeProvider;
+using ACSSAuth.DataAccess.Properties;
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess.MembershipProviders
+namespace ACSSAuth.DataAccess.MembershipProviders
 {
 	public class CssMembershipProvider : System.Web.Security.MembershipProvider
 	{

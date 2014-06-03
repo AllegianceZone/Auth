@@ -3,7 +3,7 @@ using System.Windows.Forms.Design;
 
 // From a sample at: http://dev.nomad-net.info/articles/animatedthrobber
 
-namespace Allegiance.CommunitySecuritySystem.Client.Controls.AnimatedThrobberControl
+namespace ACSSAuth.Client.Controls.AnimatedThrobberControl
 {
   public class AnimatedThrobberDesigner : ControlDesigner
   {

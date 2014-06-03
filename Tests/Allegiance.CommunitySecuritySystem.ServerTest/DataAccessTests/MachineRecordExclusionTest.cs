@@ -1,9 +1,9 @@
-﻿using Allegiance.CommunitySecuritySystem.DataAccess;
+﻿using ACSSAuth.DataAccess;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Linq;
 
-namespace Allegiance.CommunitySecuritySystem.ServerTest.DataAccessTests
+namespace ACSSAuth.ServerTest.DataAccessTests
 {
     
     

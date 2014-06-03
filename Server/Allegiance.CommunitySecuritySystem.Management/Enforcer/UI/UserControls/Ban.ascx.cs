@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.Server.Contracts;
+using ACSSAuth.Server.Contracts;
 using System.Data.Linq.SqlClient;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
+namespace ACSSAuth.Management.Enforcer.UI.UserControls
 {
 	public partial class Ban : UI.UserControl
 	{
@@ -35,16 +35,16 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 			tpAuto.Visible = false;
 			tpManual.Visible = false;
 
-			if (Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.Administrator.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.Moderator.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true)
+			if (Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.Administrator.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.Moderator.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true)
 			{
 				tpAuto.Visible = true;
 
-				if (Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
-					|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true
-					|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.Moderator.ToString()) == true)
+				if (Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
+					|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true
+					|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.Moderator.ToString()) == true)
 				{
 					tpManual.Visible = true;
 				}
@@ -126,7 +126,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 			gvPlayers.DataBind();
 		}
 
-		private List<Allegiance.CommunitySecuritySystem.Management.Enforcer.Data.Player> SearchPlayers(bool canBeUnbanned)
+		private List<ACSSAuth.Management.Enforcer.Data.Player> SearchPlayers(bool canBeUnbanned)
 		{
 			string searchText = SearchText;
 			if (searchText.Contains("%") == false)
@@ -156,7 +156,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 			return players;
 		}
 
-		private List<Allegiance.CommunitySecuritySystem.Management.Enforcer.Data.Player> GetActivePlayers(bool canBeUnbanned)
+		private List<ACSSAuth.Management.Enforcer.Data.Player> GetActivePlayers(bool canBeUnbanned)
 		{
 			List<Data.Player> players = new List<Data.Player>();
 
@@ -183,12 +183,12 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 
 		protected void btnApplyAutoBan_Click(object sender, EventArgs e)
 		{
-			if (Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.Moderator.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.Administrator.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true)
+			if (Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.Moderator.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.Administrator.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true)
 			{
-				Allegiance.CommunitySecuritySystem.Server.Administration administration = new Allegiance.CommunitySecuritySystem.Server.Administration();
+				ACSSAuth.Server.Administration administration = new ACSSAuth.Server.Administration();
 
 				using (var db = new DataAccess.CSSDataContext())
 				{
@@ -199,7 +199,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 						{
 							Alias = txtCallsign.Value,
 							BanTypeId = Convert.ToInt32(Request.Form[ddlAutoBanReason.UniqueID]), // For some reason, the post back doesn't get this value back into the control.
-							BanMode = Allegiance.CommunitySecuritySystem.Common.Enumerations.BanMode.Auto,
+							BanMode = ACSSAuth.Common.Enumerations.BanMode.Auto,
 							Password = login.Password,
 							Username = login.Username
 						});
@@ -214,7 +214,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 		{
 			if (Business.Authorization.IsZoneLeadOrAdminOrSuperAdmin(Page.User) == true)
 			{
-				Allegiance.CommunitySecuritySystem.Server.Administration administration = new Allegiance.CommunitySecuritySystem.Server.Administration();
+				ACSSAuth.Server.Administration administration = new ACSSAuth.Server.Administration();
 
 				using (var db = new DataAccess.CSSDataContext())
 				{
@@ -242,11 +242,11 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 
 		protected void btnApplyManualBan_Click(object sender, EventArgs e)
 		{
-			if (Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.Moderator.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
-				|| Page.User.IsInRole(Allegiance.CommunitySecuritySystem.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true)
+			if (Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.Moderator.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.ZoneLeader.ToString()) == true
+				|| Page.User.IsInRole(ACSSAuth.Common.Enumerations.RoleType.SuperAdministrator.ToString()) == true)
 			{
-				Allegiance.CommunitySecuritySystem.Server.Administration administration = new Allegiance.CommunitySecuritySystem.Server.Administration();
+				ACSSAuth.Server.Administration administration = new ACSSAuth.Server.Administration();
 
 				DateTime banDate = DateTime.MinValue;
 
@@ -267,7 +267,7 @@ namespace Allegiance.CommunitySecuritySystem.Management.Enforcer.UI.UserControls
 						administration.SetBan(new BanData()
 						{
 							Alias = txtCallsign.Value,
-							BanMode = Allegiance.CommunitySecuritySystem.Common.Enumerations.BanMode.Custom,
+							BanMode = ACSSAuth.Common.Enumerations.BanMode.Custom,
 							Duration = banTime,
 							Reason = txtBanReason.Text,
 							Password = login.Password,

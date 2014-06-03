@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Allegiance.CommunitySecuritySystem.DataAccess
+namespace ACSSAuth.DataAccess
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -154,7 +154,7 @@ namespace Allegiance.CommunitySecuritySystem.DataAccess
     #endregion
 		
 		public CSSDataContext() : 
-				base(global::Allegiance.CommunitySecuritySystem.DataAccess.Properties.Settings.Default.CSSConnectionString, mappingSource)
+				base(global::ACSSAuth.DataAccess.Properties.Settings.Default.CSSConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

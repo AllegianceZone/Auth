@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
 
-namespace Allegiance.CommunitySecuritySystem.Management.Content.Motd
+namespace ACSSAuth.Management.Content.Motd
 {
 	public partial class MotdPreviewIframe : System.Web.UI.Page
 	{

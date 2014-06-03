@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Allegiance.CommunitySecuritySystem.DataAccess;
+using ACSSAuth.DataAccess;
 using System.IO;
 using System.Drawing.Imaging;
 using System.Threading;
 
-namespace Allegiance.CommunitySecuritySystem.Management
+namespace ACSSAuth.Management
 {
 	public partial class CaptchaImageGenerator : System.Web.UI.Page
 	{
@@ -40,7 +40,7 @@ namespace Allegiance.CommunitySecuritySystem.Management
 					var captcha = db.Captchas.FirstOrDefault(p => p.Id == captchaToken);
 					if (captcha != null)
 					{
-						Allegiance.CommunitySecuritySystem.Common.Utility.CaptchaImage captchaImage = new Common.Utility.CaptchaImage(captcha.Answer, width, height);
+						ACSSAuth.Common.Utility.CaptchaImage captchaImage = new Common.Utility.CaptchaImage(captcha.Answer, width, height);
 						MemoryStream imageStream = new MemoryStream();
 						captchaImage.Image.Save(imageStream, ImageFormat.Jpeg);
 						imageData = imageStream.GetBuffer();
